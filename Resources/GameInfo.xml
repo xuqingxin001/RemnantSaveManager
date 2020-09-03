@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <GameInfo version="37">
   <Zones>
-    <Zone name="Earth"/>
+    <Zone name="地球" />
     <Zone name="Rhom"/>
     <Zone name="Corsus"/>
     <Zone name="Yaesha"/>
@@ -13,7 +13,7 @@
     <SubLocation eventName="BlinkFiend" location="Widow'sPass"/>
     <SubLocation eventName="BlinkThief" location="ForgottenUndercroft"/>
     <SubLocation eventName="BlizzardMage" location="WutheringKeep"/>
-    <SubLocation eventName="Brabus" location="CutthroatChannel"/>
+    <SubLocation eventName="Brabus" location="割喉渠道"/>
     <SubLocation eventName="BrainBug" location="StrangePass"/>
     <SubLocation eventName="CreepersPeeper" location="Watcher'sHollow"/>
     <SubLocation eventName="DoeShrine" location="Widow'sVestry"/>
@@ -22,27 +22,27 @@
     <SubLocation eventName="FrozenLords" location="Judgment'sSpear"/>
     <SubLocation eventName="Guardian" location="TheGuardian'sSanctum"/>
     <SubLocation eventName="HoundMaster" location="TheBurrows"/>
-    <SubLocation eventName="HuntersHideout" location="HiddenGrotto"/>
+    <SubLocation eventName="HuntersHideout" location="隐秘石窟"/>
     <SubLocation eventName="ImmolatorAndZephyr" location="WitheringVillage"/>
     <SubLocation eventName="IceSkimmer" location="TheFrieranSea"/>
     <SubLocation eventName="KinCaller" location="TheHallOfJudgement"/>
-    <SubLocation eventName="LastWill" location="Sorrow'sField"/>
-    <SubLocation eventName="LizAndLiz" location="TheWarren"/>
-    <SubLocation eventName="MadMerchant" location="Junktown"/>
+    <SubLocation eventName="LastWill" location="哀伤原野"/>
+    <SubLocation eventName="LizAndLiz" location="狡兔三窟"/>
+    <SubLocation eventName="MadMerchant" location="垃圾镇"/>
     <SubLocation eventName="RatRider" location="TheCrimsonHold"/>
-    <SubLocation eventName="RootBrute" location="SunkenPassage"/>
-    <SubLocation eventName="RootCultist" location="MarrowPass"/>
-    <SubLocation eventName="RootDragon" location="TheAshYard"/>
-    <SubLocation eventName="RootEnt" location="TheChokingHollow"/>
+    <SubLocation eventName="RootBrute" location="沉没通道"/>
+    <SubLocation eventName="RootCultist" location="骨髓隘口"/>
+    <SubLocation eventName="RootDragon" location="灰烬庭院"/>
+    <SubLocation eventName="RootEnt" location="窒息山谷"/>
     <SubLocation eventName="RootMother" location="ChurchOfTheHarbinger"/>
-    <SubLocation eventName="RootShrine" location="TheGallows"/>
-    <SubLocation eventName="RootTumbleweed" location="TheTangledPass"/>
-    <SubLocation eventName="RootWraith" location="TheHiddenSanctum"/>
+    <SubLocation eventName="RootShrine" location="绞刑架"/>
+    <SubLocation eventName="RootTumbleweed" location="纠结隘口"/>
+    <SubLocation eventName="RootWraith" location="秘密圣所"/>
     <SubLocation eventName="Sentinel" location="ShackledCanyon"/>
     <SubLocation eventName="ShamanFlames" location="GraveOfTheElders"/>
     <SubLocation eventName="ShieldWarden" location="Exile'sTrench"/>
     <SubLocation eventName="SlimeHulk" location="TheDrownedTrench"/>
-    <SubLocation eventName="Splitter" location="ResearchStationAlpha"/>
+    <SubLocation eventName="Splitter" location="A号研究所"/>
     <SubLocation eventName="StormCaller" location="Heretic'sNest"/>
     <SubLocation eventName="StuckMerchant" location="MerchantDungeon"/>
     <SubLocation eventName="SwampGuardian" location="TheGrotto"/>
@@ -65,7 +65,7 @@
   </SubLocations>
   <MainLocations>
     <MainLocation key="City Overworld Zone1" name="Fairview"/>
-    <MainLocation key="City Overworld Zone2" name="Westcourt"/>
+    <MainLocation key="City Overworld Zone2" name="西苑"/>
     <MainLocation key="Wasteland Overworld Zone1" name="TheEasternWind"/>
     <MainLocation key="Wasteland Overworld Zone2" name="TheScouringWaste"/>
     <MainLocation key="Swamp Overworld Zone1" name="TheFetidGlade"/>
@@ -84,15 +84,15 @@
     <Event name="AbrasiveAmulet">
       <Item notes="Random drop on Corsus">/Items/Trinkets/Trinket_AbrasiveAmulet</Item>
     </Event>
-    <Event name="AcesCoin">
+    <Event name="AcesCoin" altname="奇怪硬币">
       <Item>/Items/Weapons/Basic/HandGuns/Revolver/Weapon_Revolver</Item>
     </Event>
     <Event name="Afterbirth" altname="ChillwindHovel">
       <Item dlc="Subject 2923">/Items/Trinkets/ScavengersRing</Item>
       <Item dlc="Subject 2923" notes="Speak to mother at Chillwind Hovel, then free Krall Baby">/Items/Trinkets/BlessedNecklace</Item>
     </Event>
-    <Event name="AggressorsBane">
-      <Item>/Items/Trinkets/AggressorsBane</Item>
+    <Event name="AggressorsBane" altname="入侵者之灾祸">
+      <Item altname="入侵者之灾祸">/Items/Trinkets/AggressorsBane</Item>
     </Event>
     <Event name="AlchemistsJewel" altname="Alchemist'sJewel">
       <Item dlc="Subject 2923">/Items/Trinkets/Trinket_AlchemistsJewel</Item>
@@ -105,10 +105,10 @@
     <Event name="BackbreakerRing">
       <Item dlc="Subject 2923" notes="Random drop on Rural Earth">/Items/Trinkets/BackbreakerRing</Item>
     </Event>
-    <Event name="BandOfCastor">
-      <Item>/Items/Trinkets/BandsOfCastorAndPollux/Trinket_BandOfCastor</Item>
+    <Event name="BandOfCastor" altname="卡斯托指环">
+      <Item altname="卡斯托指环">/Items/Trinkets/BandsOfCastorAndPollux/Trinket_BandOfCastor</Item>
     </Event>
-    <Event name="BandOfPollux">
+    <Event name="BandOfPollux" altname="帕勒克指环">
       <Item>/Items/Trinkets/BandsOfCastorAndPollux/Trinket_BandOfPollux</Item>
     </Event>
     <Event name="BandOfStrength">
@@ -133,12 +133,12 @@
     <Event name="BloodFont">
       <Item>/Items/Trinkets/Trinket_BloodFont</Item>
     </Event>
-    <Event name="Brabus">
-      <Item>/Items/Mods/ExplosiveShot</Item>
-      <Item>/Items/Armor/Bandit/Armor_Head_Bandit</Item>
-      <Item>/Items/Armor/Bandit/Armor_Body_Bandit</Item>
-      <Item>/Items/Armor/Bandit/Armor_Legs_Bandit</Item>
-      <Item>/Items/Traits/Trait_ColdAsIce</Item>
+    <Event name="Brabus" altname="布拉巴斯">
+      <Item altname="爆炸射击">/Items/Mods/ExplosiveShot</Item>
+      <Item altname="强盗面具">/Items/Armor/Bandit/Armor_Head_Bandit</Item>
+      <Item altname="盗贼夹克">/Items/Armor/Bandit/Armor_Body_Bandit</Item>
+      <Item altname="强盗裤子">/Items/Armor/Bandit/Armor_Legs_Bandit</Item>
+      <Item altname="冷若冰霜">/Items/Traits/Trait_ColdAsIce</Item>
     </Event>
     <Event name="BrainBug" altname="Mar'gosh">
       <Item dlc="Swamps of Corsus" altname="Gift of the Iskal">/Items/Trinkets/GIftOfTheIskal</Item>
@@ -153,8 +153,8 @@
     <Event name="BurdenOfTheReckless">
       <Item notes="Random drop on Rhom">/Items/Trinkets/BurdenOfTheReckless</Item>
     </Event>
-    <Event name="BurdenOfTheGambler">
-      <Item notes="Random drop on Earth">/Items/Trinkets/BurdenOfTheGambler</Item>
+    <Event name="BurdenOfTheGambler" altname="赌徒之负担">
+      <Item altname="赌徒之负担" notes="Random drop on Earth">/Items/Trinkets/BurdenOfTheGambler</Item>
     </Event>
     <Event name="BurdenOfTheDevoted">
       <Item notes="Random drop on Corsus">/Items/Trinkets/BurdenOfTheDevoted</Item>
@@ -181,7 +181,7 @@
       <Item dlc="Subject 2923">/Items/Trinkets/SwashbucklersSignet</Item>
       <Item dlc="Subject 2923" altname="Twin Shot">/Items/Weapons/Basic/MiniCrossbow/Weapon_MiniCrossbow</Item>
     </Event>
-    <Event name="Cryptolith">
+    <Event name="Cryptolith" altname="密码晶石">
       <Item>/Items/Traits/Trait_Concentration</Item>
       <Item>/Items/Traits/Trait_BloodBond</Item>
       <Item>/Items/Armor/Armor_Head_Labyrinth</Item>
@@ -198,8 +198,8 @@
       <Item>/Items/Trinkets/Trinket_ScavengersBauble</Item>
       <Item>/Items/Traits/Trait_Swiftness</Item>
     </Event>
-    <Event name="DrifterMask">
-      <Item>/Items/Armor/Drifter/Armor_Head_Drifter</Item>
+    <Event name="DrifterMask" altname="流浪者面罩">
+      <Item altname="流浪者面罩">/Items/Armor/Drifter/Armor_Head_Drifter</Item>
     </Event>
     <Event name="Driftstone">
       <Item dlc="Subject 2923" notes="Random drop on Reisum">/Items/Trinkets/DriftStone</Item>
@@ -252,14 +252,14 @@
     <Event name="Guardian">
       <!--Item dlc="Subject 2923">/Items/Trinkets/Trinket_GunslingersCharm</Item-->
     </Event>
-    <Event name="GunslingersCharm">
-      <Item>/Items/Trinkets/Trinket_GunslingersCharm</Item>
+    <Event name="GunslingersCharm" altname="枪手神符">
+      <Item altname="枪手神符">/Items/Trinkets/GunslingersCharm</Item>
     </Event>
-    <Event name="GunslignersRing" altname="Gunslinger'sRing">
-      <Item>/Items/Trinkets/Trinket_GunslingersRing</Item>
+    <Event name="GunslignersRing" altname="枪手戒指">
+      <Item altname="枪手戒指">/Items/Trinkets/Trinket_GunslingersRing</Item>
     </Event>
-    <Event name="HeartSeeker">
-      <Item>/Items/Trinkets/HeartSeeker</Item>
+    <Event name="HeartSeeker" altname="追心者">
+      <Item altname="追心者">/Items/Trinkets/HeartSeeker</Item>
     </Event>
     <Event name="Homestead">
       <Item dlc="Subject 2923">/Items/Trinkets/VanguardRing</Item>
@@ -273,7 +273,7 @@
     <Event name="HuntersHalo">
       <Item>/Items/Trinkets/Trinket_HuntersHalo</Item>
     </Event>
-    <Event name="HuntersHideout">
+    <Event name="HuntersHideout" altname="猎人老窝">
       <Item>/Items/Weapons/Basic/HandGuns/HuntingPistol/Weapon_HuntingPistol</Item>
       <Item>/Items/Traits/Trait_ShadowWalker</Item>
     </Event>
@@ -308,32 +308,32 @@
       <Item dlc="Subject 2923">/Items/Traits/Trait_Siphoner</Item>
       <Item dlc="Subject 2923" notes="Speak to mother at Chillwind Hovel, then free Krall Baby">/Items/Trinkets/BlessedNecklace</Item>
     </Event>
-    <Event name="LastWill" altname="SupplyRun">
-      <Item>/Items/Weapons/Basic/LongGuns/AssaultRifle/Weapon_AssaultRifle</Item>
-      <Item>/Items/Traits/Trait_Spirit</Item>
+    <Event name="LastWill" altname="补给任务">
+      <Item altname="突击步枪">/Items/Weapons/Basic/LongGuns/AssaultRifle/Weapon_AssaultRifle</Item>
+      <Item altname="精神">/Items/Traits/Trait_Spirit</Item>
     </Event>
     <Event name="LeechEmber">
       <Item>/Items/Trinkets/Trinket_LeechEmber</Item>
     </Event>
-    <Event name="LizAndLiz" altname="TaleOfTwoLiz's">
-      <Item altname="Chicago Typewriter">/Items/Weapons/Basic/LongGuns/MachineGun/Weapon_Machinegun</Item>
-      <Item>/Items/Traits/Trait_Warrior</Item>
+    <Event name="LizAndLiz" altname="双薇战记">
+      <Item altname="芝加哥打字机">/Items/Weapons/Basic/LongGuns/MachineGun/Weapon_Machinegun</Item>
+      <Item altname="战士">/Items/Traits/Trait_Warrior</Item>
     </Event>
-    <Event name="MadMerchant">
-      <Item>/Items/QuestItems/TwistedMask/Quest_TwistedMask</Item>
+    <Event name="MadMerchant" altname="疯狂商人">
+      <Item altname="扭曲面具">/Items/QuestItems/TwistedMask/Quest_TwistedMask</Item>
     </Event>
     <Event name="Monolith">
       <Item dlc="Swamps of Corsus">/Items/Armor/Void/Armor_Head_Void</Item>
       <Item dlc="Swamps of Corsus">/Items/Armor/Void/Armor_Body_Void</Item>
       <Item dlc="Swamps of Corsus">/Items/Armor/Void/Armor_Legs_Void</Item>
     </Event>
-    <Event name="MothersRing">
-      <Item>/Items/Trinkets/Trinket_MothersRing</Item>
+    <Event name="MothersRing" altname="母亲的戒指">
+      <Item>/Items/Trinkets/Trinket_母亲的戒指</Item>
     </Event>
-    <Event name="MudTooth">
+    <Event name="MudTooth" altname="泥牙的藏身处">
       <Item>/Quests/Quest_OverworldPOI_MudTooth/Quest_BrabusPocketWatch</Item>
     </Event>
-    <Event name="Nexus" altname="RootNexus"></Event>
+    <Event name="Nexus" altname="藤蔓中枢"></Event>
     <Event name="OldManAndConstruct" altname="WudAndAncientConstruct">
       <Item>/Items/Trinkets/JewelOfTheBlackSun</Item>
       <Item>/Items/Trinkets/MendersCharm</Item>
@@ -346,11 +346,11 @@
     <Event name="PearlOfLuminescence">
       <Item>/Items/Trinkets/Trinket_PearlOfLuminescence</Item>
     </Event>
-    <Event name="Penitent" altname="Leto'sAmulet">
+    <Event name="Penitent" altname="莱托护符">
       <Item>/Items/Trinkets/Trinket_LetosAmulet</Item>
     </Event>
-    <Event name="PillarOfStone">
-      <Item>/Items/Trinkets/Trinket_PillarOfStone</Item>
+    <Event name="PillarOfStone" altname="石之砥柱">
+      <Item altname="石之砥柱">/Items/Trinkets/Trinket_PillarOfStone</Item>
     </Event>
     <Event name="PolishedWhetstone">
       <Item dlc="Subject 2923" notes="Random drop on Reisum">/Items/Trinkets/PolishedWhetstone</Item>
@@ -374,8 +374,8 @@
     <Event name="RazorwireNecklace">
       <Item dlc="Subject 2923" notes="Random drop on Reisum">/Items/Trinkets/RazorwireNecklace</Item>
     </Event>
-    <Event name="ReggiesRing">
-      <Item>/Items/Traits/Trait_Scavenger</Item>
+    <Event name="ReggiesRing" altname="污秽戒指">
+      <Item altname="拾荒者">/Items/Traits/Trait_Scavenger</Item>
     </Event>
     <Event name="RestrictionCord">
       <Item notes="Random drop on Yaesha">/Items/Trinkets/RestrictionCord</Item>
@@ -383,8 +383,8 @@
     <Event name="RingOfElusion">
       <Item>/Items/Trinkets/RingOfElusion</Item>
     </Event>
-    <Event name="RingOfEvasion">
-      <Item>/Items/Trinkets/Trinket_RingOfEvasion</Item>
+    <Event name="RingOfEvasion" altname="闪避戒指">
+      <Item altname="闪避戒指">/Items/Trinkets/Trinket_RingOfEvasion</Item>
     </Event>
     <Event name="RockOfAnguish">
       <Item>/Items/Trinkets/RockOfAnguish</Item>
@@ -392,43 +392,43 @@
     <Event name="RingOfShadows">
       <Item>/Items/Trinkets/Trinket_RingOfShadows</Item>
     </Event>
-    <Event name="RootBrute" altname="Gorefist">
-      <Item>/Items/Mods/MantleOfThorns</Item>
+    <Event name="RootBrute" altname="血腥铁拳">
+      <Item altname="尖刺斗篷">/Items/Mods/MantleOfThorns</Item>
     </Event>
-    <Event name="RootCultist">
-      <Item>/Items/Trinkets/BraidedThorns</Item>
-      <Item>/Items/Trinkets/Trinket_RootCirclet</Item>
+    <Event name="RootCultist" altname="根蔓神教">
+      <Item altname="编织棘刺">/Items/Trinkets/BraidedThorns</Item>
+      <Item altname="根蔓饰环">/Items/Trinkets/Trinket_RootCirclet</Item>
     </Event>
-    <Event name="RootDragon" altname="Singe">
-      <Item>/Items/Weapons/Boss/Root_Spitfire/Weapon_Root_Spitfire</Item>
-      <Item>/Items/Weapons/Boss/Root_Smolder/Weapon_Root_Smolder</Item>
-      <Item>/Player/Emotes/Emote_Beckon</Item>
+    <Event name="RootDragon" altname="烧焦">
+      <Item altname="喷火者">/Items/Weapons/Boss/Root_Spitfire/Weapon_Root_Spitfire</Item>
+      <Item altname="阴燃">/Items/Weapons/Boss/Root_Smolder/Weapon_Root_Smolder</Item>
+      <Item altname="召唤">/Player/Emotes/Emote_Beckon</Item>
     </Event>
     <Event name="RootMother">
       <Item>/Items/Traits/Trait_MothersBlessing</Item>
       <Item>/Items/Weapons/Basic/LongGuns/SniperRifle/Weapon_SniperRifle</Item>
     </Event>
-    <Event name="RootTumbleweed" altname="TheMangler">
-      <Item>/Items/Mods/SeedCaller</Item>
+    <Event name="RootTumbleweed" altname="割碎者">
+      <Item altname="播种者">/Items/Mods/SeedCaller</Item>
     </Event>
-    <Event name="RootWraith" altname="Shroud">
-      <Item>/Items/Mods/Rattleweed</Item>
+    <Event name="RootWraith" altname="暗蕴">
+      <Item altname="响草">/Items/Mods/Rattleweed</Item>
     </Event>
-    <Event name="RootEnt" altname="TheEnt">
-      <Item>/Items/Weapons/Boss/Root_SporeLauncher/Weapon_Root_SporeLauncher</Item>
-      <Item>/Items/Weapons/Boss/Root_PetrifiedMaul/Weapon_Root_PetrifiedMaul</Item>
-      <Item>/Items/Traits/Trait_QuickHands</Item>
-      <Item>/Player/Emotes/Emote_Cheer</Item>
+    <Event name="RootEnt" altname="树精">
+      <Item altname="孢子喷射">/Items/Weapons/Boss/Root_SporeLauncher/Weapon_Root_SporeLauncher</Item>
+      <Item altname="石化大锤">/Items/Weapons/Boss/Root_PetrifiedMaul/Weapon_Root_PetrifiedMaul</Item>
+      <Item altname="眼疾手快">/Items/Traits/Trait_QuickHands</Item>
+      <Item altname="喝彩">/Player/Emotes/Emote_Cheer</Item>
     </Event>
-    <Event name="RootShrine">
-      <Item>/Items/Armor/Twisted/Armor_Head_Twisted</Item>
-      <Item>/Items/Armor/Twisted/Armor_Body_Twisted</Item>
-      <Item>/Items/Armor/Twisted/Armor_Legs_Twisted</Item>
+    <Event name="RootShrine" altname="根蔓神祠">
+      <Item altname="扭曲头巾">/Items/Armor/Twisted/Armor_Head_Twisted</Item>
+      <Item altname="扭曲牢笼">/Items/Armor/Twisted/Armor_Body_Twisted</Item>
+      <Item altname="扭曲腿甲">/Items/Armor/Twisted/Armor_Legs_Twisted</Item>
     </Event>
     <Event name="Ruins">
     </Event>
-    <Event name="SageStone">
-      <Item>/Items/Trinkets/Trinket_Sagestone</Item>
+    <Event name="SageStone" altname="贤者之石">
+      <Item altname="贤者之石">/Items/Trinkets/Trinket_Sagestone</Item>
     </Event>
     <Event name="Sentinel" altname="Raze">
       <Item>/Items/Mods/Beckon</Item>
@@ -436,7 +436,7 @@
     <Event name="SerpentsFang">
       <Item dlc="Subject 2923" notes="Random drop on Reisum">/Items/Trinkets/SerpentsFang</Item>
     </Event>
-    <Event name="Settlement">
+    <Event name="Settlement" altname="聚居地">
     </Event>
     <Event name="ShamanFlames">
       <Item dlc="Subject 2923">/Items/Trinkets/Trinket_PrismaticDiamondRing</Item>
@@ -468,17 +468,17 @@
     <Event name="SpiritStone">
       <Item notes="Random drop on Yaesha">/Items/Trinkets/Trinket_SpiritStone</Item>
     </Event>
-    <Event name="Splitter" altname="Riphide">
-      <Item>/Items/Armor/Leto/Armor_Head_Leto</Item>
-      <Item>/Items/Armor/Leto/Armor_Body_Leto</Item>
-      <Item>/Items/Armor/Leto/Armor_Legs_Leto</Item>
-      <Item>/Items/Mods/FlickerCloak</Item>
+    <Event name="Splitter" altname="扒皮者">
+      <Item altname="莱托的头盔">/Items/Armor/Leto/Armor_Head_Leto</Item>
+      <Item altname="莱托的护甲">/Items/Armor/Leto/Armor_Body_Leto</Item>
+      <Item altname="莱托的绑腿">/Items/Armor/Leto/Armor_Legs_Leto</Item>
+      <Item altname="闪烁披风">/Items/Mods/FlickerCloak</Item>
     </Event>
     <Event name="StalkersBrand">
       <Item notes="Random drop on Yaesha">/Items/Trinkets/Trinket_StalkersBrand</Item>
     </Event>
-    <Event name="StockpileCirclet">
-      <Item>/Items/Trinkets/Trinket_StockpileCirclet</Item>
+    <Event name="StockpileCirclet" altname="储备饰环">
+      <Item altname="储备饰环">/Items/Trinkets/Trinket_StockpileCirclet</Item>
     </Event>
     <Event name="StoneOfBalance">
       <Item>/Items/Trinkets/Trinket_StoneOfBalance</Item>
@@ -605,9 +605,9 @@
     <Event name="Vyr" altname="ShadeAndShatter">
       <Item>/Items/Mods/VeilOfTheBlackTear</Item>
     </Event>
-    <Event name="WailingWood">
-      <Item>/Items/Trinkets/Trinket_TwistedIdol</Item>
-      <Item>/Items/Traits/Trait_BarkSkin</Item>
+    <Event name="WailingWood" altname="恸哭之林">
+      <Item altname="扭曲神像">/Items/Trinkets/Trinket_TwistedIdol</Item>
+      <Item altname="树皮">/Items/Traits/Trait_BarkSkin</Item>
     </Event>
     <Event name="Ward13">
       <Item>/Items/Weapons/Basic/LongGuns/Coachgun/Weapon_Coachgun</Item>
