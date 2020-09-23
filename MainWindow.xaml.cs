@@ -47,6 +47,13 @@ namespace RemnantSaveManager
         private DateTime lastUpdateCheck;
         private int saveCount;
 
+        public enum LogType
+        {
+            Normal,
+            Success,
+            Error
+        }
+
         private bool ActiveSaveIsBackedUp { 
             get {
                 DateTime saveDate = File.GetLastWriteTime(saveDirPath + "\\profile.sav");
@@ -64,14 +71,14 @@ namespace RemnantSaveManager
             {
                 if (value)
                 {
-                    lblStatus.ToolTip = "Backed Up";
+                    lblStatus.ToolTip = "备份";
                     lblStatus.Content = FindResource("StatusOK");
                     btnBackup.IsEnabled = false;
                     btnBackup.Content = FindResource("SaveGrey");
                 }
                 else
                 {
-                    lblStatus.ToolTip = "Not Backed Up";
+                    lblStatus.ToolTip = "不备份";
                     lblStatus.Content = FindResource("StatusNo");
                     btnBackup.IsEnabled = true;
                     btnBackup.Content = FindResource("Save");
@@ -88,7 +95,7 @@ namespace RemnantSaveManager
             {
                 System.IO.File.WriteAllText("log.txt", DateTime.Now.ToString() + ": Version " + typeof(MainWindow).Assembly.GetName().Version + "\r\n");
             }
-            logMessage("Loading...");
+            logMessage("加载中...");
             if (Properties.Settings.Default.UpgradeRequired)
             {
                 Properties.Settings.Default.Upgrade();
@@ -98,13 +105,13 @@ namespace RemnantSaveManager
 
             if (Properties.Settings.Default.BackupFolder.Length == 0)
             {
-                logMessage("Backup folder not set; reverting to default.");
+                logMessage("未设置备份文件夹；正在还原为默认文件夹。");
                 Properties.Settings.Default.BackupFolder = defaultBackupFolder;
                 Properties.Settings.Default.Save();
             } 
             else if (!Directory.Exists(Properties.Settings.Default.BackupFolder) && !Properties.Settings.Default.BackupFolder.Equals(defaultBackupFolder))
             {
-                logMessage("Backup folder ("+ Properties.Settings.Default.BackupFolder + ") not found; reverting to default.");
+                logMessage("备份文件夹 ("+ Properties.Settings.Default.BackupFolder + ") 未找到; 正在还原默认值。");
                 Properties.Settings.Default.BackupFolder = defaultBackupFolder;
                 Properties.Settings.Default.Save();
             } 
@@ -140,7 +147,7 @@ namespace RemnantSaveManager
             activeSaveAnalyzer = new SaveAnalyzer(this)
             {
                 ActiveSave = true,
-                Title = "Active Save World Analyzer"
+                Title = "分析当前存档已激活世界"
             };
             backupSaveAnalyzers = new List<SaveAnalyzer>();
 
@@ -154,7 +161,7 @@ namespace RemnantSaveManager
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             txtLog.IsReadOnly = true;
-            logMessage("Current save date: " + File.GetLastWriteTime(saveDirPath + "\\profile.sav").ToString());
+            logMessage("当前存档日期: " + File.GetLastWriteTime(saveDirPath + "\\profile.sav").ToString());
             //logMessage("Backups folder: " + backupDirPath);
             //logMessage("Save folder: " + saveDirPath);
             loadBackups();
@@ -163,6 +170,7 @@ namespace RemnantSaveManager
             txtBackupMins.Text = Properties.Settings.Default.BackupMinutes.ToString();
             txtBackupLimit.Text = Properties.Settings.Default.BackupLimit.ToString();
             chkShowPossibleItems.IsChecked = Properties.Settings.Default.ShowPossibleItems;
+            chkAutoCheckUpdate.IsChecked = Properties.Settings.Default.AutoCheckUpdate;
 
             cmbMissingItemColor.Items.Add("Red");
             cmbMissingItemColor.Items.Add("White");
@@ -179,14 +187,17 @@ namespace RemnantSaveManager
             activeSave = new RemnantSave(saveDirPath);
             updateCurrentWorldAnalyzer();
 
-            checkForUpdate();
+            if (Properties.Settings.Default.AutoCheckUpdate)
+            {
+                checkForUpdate();
+            }
         }
 
         private void loadBackups()
         {
             if (!Directory.Exists(backupDirPath))
             {
-                logMessage("Backups folder not found, creating...");
+                logMessage("未找到备份文件夹，正在创建...");
                 Directory.CreateDirectory(backupDirPath);
             }
             dataBackups.ItemsSource = null;
@@ -221,10 +232,10 @@ namespace RemnantSaveManager
                 }
             }
             dataBackups.ItemsSource = listBackups;
-            logMessage("Backups found: " + listBackups.Count);
+            logMessage("找到备份: " + listBackups.Count);
             if (listBackups.Count > 0)
             {
-                logMessage("Last backup save date: " + listBackups[listBackups.Count - 1].SaveDate.ToString());
+                logMessage("上次备份存档日期: " + listBackups[listBackups.Count - 1].SaveDate.ToString());
             }
             if (activeBackup != null)
             {
@@ -269,10 +280,38 @@ namespace RemnantSaveManager
 
         public void logMessage(string msg)
         {
+            logMessage(msg, Colors.White);
+        }
+
+        public void logMessage(string msg, LogType lt)
+        {
+            Color color = Colors.White;
+            if (lt == LogType.Success)
+            {
+                color = Color.FromRgb(0, 200, 0);
+            }
+            else if (lt == LogType.Error)
+            {
+                color = Color.FromRgb(200, 0, 0);
+            }
+            logMessage(msg, color);
+        }
+
+        public void logMessage(string msg, Color color)
+        {
             if (!suppressLog)
             {
-                txtLog.Text = txtLog.Text + Environment.NewLine + DateTime.Now.ToString() +": " + msg;
+                txtLog.Text = txtLog.Text + Environment.NewLine + DateTime.Now.ToString() + ": " + msg;
                 lblLastMessage.Content = msg;
+                lblLastMessage.Foreground = new SolidColorBrush(color);
+                if (color.Equals(Colors.White))
+                {
+                    lblLastMessage.FontWeight = FontWeights.Normal;
+                }
+                else
+                {
+                    lblLastMessage.FontWeight = FontWeights.Bold;
+                }
             }
             if (Properties.Settings.Default.CreateLogFile)
             {
@@ -340,13 +379,13 @@ namespace RemnantSaveManager
                 checkBackupLimit();
                 dataBackups.Items.Refresh();
                 this.ActiveSaveIsBackedUp = true;
-                logMessage($"Backup completed ({saveDate.ToString()})!");
+                logMessage($"备份已完成 ({saveDate.ToString()})!", LogType.Success);
             }
             catch (IOException ex)
             {
                 if (ex.Message.Contains("being used by another process"))
                 {
-                    logMessage("Save file in use; waiting 0.5 seconds and retrying.");
+                    logMessage("保存正在使用的文件；等待0.5秒，然后重试。");
                     System.Threading.Thread.Sleep(500);
                     doBackup();
                 }
@@ -367,43 +406,41 @@ namespace RemnantSaveManager
         {
             if (isRemnantRunning())
             {
-                logMessage("Exit the game before restoring a save backup.");
+                logMessage("在还原存档备份之前退出游戏。", LogType.Error);
                 return;
             }
 
             if (dataBackups.SelectedItem == null)
             {
-                logMessage("Choose a backup to restore from the list!");
+                logMessage("从列表中选择要还原的备份！", LogType.Error);
                 return;
             }
 
-            if (this.ActiveSaveIsBackedUp)
+            if (!this.ActiveSaveIsBackedUp)
             {
-                saveWatcher.EnableRaisingEvents = false;
-                System.IO.DirectoryInfo di = new DirectoryInfo(saveDirPath);
-                foreach (FileInfo file in di.GetFiles())
-                {
-                    file.Delete();
-                }
-                SaveBackup selectedBackup = (SaveBackup)dataBackups.SelectedItem;
-                foreach (var file in Directory.GetFiles(backupDirPath + "\\" + selectedBackup.SaveDate.Ticks))
-                    File.Copy(file, saveDirPath + "\\" + System.IO.Path.GetFileName(file));
-                foreach (SaveBackup saveBackup in listBackups)
-                {
-                    saveBackup.Active = false;
-                }
-                selectedBackup.Active = true;
-                updateCurrentWorldAnalyzer();
-                dataBackups.Items.Refresh();
-                btnRestore.IsEnabled = false;
-                btnRestore.Content = FindResource("RestoreGrey");
-                logMessage("Backup restored!");
-                saveWatcher.EnableRaisingEvents = Properties.Settings.Default.AutoBackup;
+                doBackup();
             }
-            else
+
+            saveWatcher.EnableRaisingEvents = false;
+            System.IO.DirectoryInfo di = new DirectoryInfo(saveDirPath);
+            foreach (FileInfo file in di.GetFiles())
             {
-                logMessage("Backup your current save before restoring another!");
+                file.Delete();
             }
+            SaveBackup selectedBackup = (SaveBackup)dataBackups.SelectedItem;
+            foreach (var file in Directory.GetFiles(backupDirPath + "\\" + selectedBackup.SaveDate.Ticks))
+                File.Copy(file, saveDirPath + "\\" + System.IO.Path.GetFileName(file));
+            foreach (SaveBackup saveBackup in listBackups)
+            {
+                saveBackup.Active = false;
+            }
+            selectedBackup.Active = true;
+            updateCurrentWorldAnalyzer();
+            dataBackups.Items.Refresh();
+            btnRestore.IsEnabled = false;
+            btnRestore.Content = FindResource("RestoreGrey");
+            logMessage("备份已还原！", LogType.Success);
+            saveWatcher.EnableRaisingEvents = Properties.Settings.Default.AutoBackup;
         }
 
         private void ChkAutoBackup_Click(object sender, RoutedEventArgs e)
@@ -434,7 +471,7 @@ namespace RemnantSaveManager
                 }
                 catch (Exception ex)
                 {
-                    logMessage(ex.GetType()+" setting save file timer: " +ex.Message+"("+ex.StackTrace+")");
+                    logMessage(ex.GetType()+" 设置保存文件定时: " +ex.Message+"("+ex.StackTrace+")");
                 }
             });
         }
@@ -474,7 +511,7 @@ namespace RemnantSaveManager
                             }
                             dataBackups.Items.Refresh();
                             TimeSpan span = (newBackupTime - DateTime.Now);
-                            logMessage($"Save change detected, but {span.Minutes + Math.Round(span.Seconds / 60.0, 2)} minutes, left until next backup");
+                            logMessage($"已检测到存档更改, 距离下一次备份还有 {span.Minutes + Math.Round(span.Seconds / 60.0, 2)} 分钟");
                         }
                     }
                     if (saveCount != 0)
@@ -502,7 +539,7 @@ namespace RemnantSaveManager
                 }
                 catch (Exception ex)
                 {
-                    logMessage(ex.GetType() + " processing save file change: " + ex.Message + "(" + ex.StackTrace + ")");
+                    logMessage(ex.GetType() + " 正在处理存档文件更改: " + ex.Message + "(" + ex.StackTrace + ")");
                 }
             });
         }
@@ -605,7 +642,7 @@ namespace RemnantSaveManager
                 {
                     if (!listBackups[i].Keep && !listBackups[i].Active)
                     {
-                        logMessage("Deleting excess backup " + listBackups[i].Name + " (" + listBackups[i].SaveDate + ")");
+                        logMessage("删除多余备份 " + listBackups[i].Name + " (" + listBackups[i].SaveDate + ")");
                         Directory.Delete(backupDirPath + "\\" + listBackups[i].SaveDate.Ticks, true);
                         removeBackups.Add(listBackups[i]);
                         delNum--;
@@ -623,7 +660,7 @@ namespace RemnantSaveManager
         {
             if (!Directory.Exists(backupDirPath))
             {
-                logMessage("Backups folder not found, creating...");
+                logMessage("未找到备份文件夹，正在创建...");
                 Directory.CreateDirectory(backupDirPath);
             }
             Process.Start(backupDirPath+"\\");
@@ -663,7 +700,7 @@ namespace RemnantSaveManager
 
         private void DataBackups_BeginningEdit(object sender, DataGridBeginningEditEventArgs e)
         {
-            if (e.Column.Header.ToString().Equals("SaveDate") || e.Column.Header.ToString().Equals("Active")) e.Cancel = true;
+            if (e.Column.Header.ToString().Equals("SaveDate") || e.Column.Header.ToString().Equals("激活")) e.Cancel = true;
         }
 
         private void DataBackups_CellEditEnding(object sender, DataGridCellEditEndingEventArgs e)
@@ -758,9 +795,9 @@ namespace RemnantSaveManager
         private void analyzeMenuItem_Click(object sender, System.EventArgs e)
         {
             SaveBackup saveBackup = (SaveBackup)dataBackups.SelectedItem;
-            logMessage("Showing backup save (" + saveBackup.Name + ") world analyzer...");
+            logMessage("显示备份存档 (" + saveBackup.Name + ") 世界分析...");
             SaveAnalyzer analyzer = new SaveAnalyzer(this);
-            analyzer.Title = "Backup Save ("+saveBackup.Name+") World Analyzer";
+            analyzer.Title = "备份存档 ("+saveBackup.Name+") 世界分析";
             analyzer.Closing += Backup_Analyzer_Closing;
             List<RemnantCharacter> chars = saveBackup.Save.Characters;
             for (int i = 0; i < chars.Count; i++)
@@ -780,14 +817,14 @@ namespace RemnantSaveManager
         private void deleteMenuItem_Click(object sender, System.EventArgs e)
         {
             SaveBackup save = (SaveBackup)dataBackups.SelectedItem;
-            var confirmResult = MessageBox.Show("Are you sure to delete backup \"" + save.Name + "\" (" + save.SaveDate.ToString() + ")?",
-                                     "Confirm Delete", MessageBoxButton.YesNo, MessageBoxImage.Warning, MessageBoxResult.No);
+            var confirmResult = MessageBox.Show("您确定要删除备份 \"" + save.Name + "\" (" + save.SaveDate.ToString() + ")?",
+                                     "确认删除", MessageBoxButton.YesNo, MessageBoxImage.Warning, MessageBoxResult.No);
             if (confirmResult == MessageBoxResult.Yes)
             {
                 if (save.Keep)
                 {
-                    confirmResult = MessageBox.Show("This backup is marked for keeping. Are you SURE to delete backup \"" + save.Name + "\" (" + save.SaveDate.ToString() + ")?",
-                                     "Confirm Delete", MessageBoxButton.YesNo, MessageBoxImage.Warning, MessageBoxResult.No);
+                    confirmResult = MessageBox.Show("此备份已标记为保留。 您确定要删除备份吗 \"" + save.Name + "\" (" + save.SaveDate.ToString() + ")?",
+                                     "确认删除", MessageBoxButton.YesNo, MessageBoxImage.Warning, MessageBoxResult.No);
                     if (confirmResult != MessageBoxResult.Yes)
                     {
                         return;
@@ -803,13 +840,13 @@ namespace RemnantSaveManager
                 }
                 listBackups.Remove(save);
                 dataBackups.Items.Refresh();
-                logMessage("Backup \"" + save.Name + "\" (" + save.SaveDate + ") deleted.");
+                logMessage("备份 \"" + save.Name + "\" (" + save.SaveDate + ") 已删除.");
             }
         }
 
         private void BtnAnalyzeCurrent_Click(object sender, RoutedEventArgs e)
         {
-            logMessage("Showing current save world analyzer...");
+            logMessage("显示当前存档世界分析...");
             activeSaveAnalyzer.Show();
         }
 
@@ -861,8 +898,8 @@ namespace RemnantSaveManager
                         //do stuff in here with the interface
                         if (localVersion.CompareTo(remoteVersion) == -1)
                         {
-                            var confirmResult = MessageBox.Show("There is a new version available. Would you like to open the download page?",
-                                     "Update Available", MessageBoxButton.YesNo, MessageBoxImage.Question, MessageBoxResult.No);
+                            var confirmResult = MessageBox.Show("检测新版本。 您想打开下载页面吗?",
+                                     "有可用更新", MessageBoxButton.YesNo, MessageBoxImage.Question, MessageBoxResult.No);
                             if (confirmResult == MessageBoxResult.Yes)
                             {
                                 Process.Start("https://github.com/Razzmatazzz/RemnantSaveManager/releases/latest");
@@ -878,7 +915,7 @@ namespace RemnantSaveManager
                 {
                     this.Dispatcher.Invoke(() =>
                     {
-                        logMessage("Error checking for new version: " + ex.Message);
+                        logMessage("检查新版本时出错: " + ex.Message, LogType.Error);
                     });
                 }
             }).Start();
@@ -904,14 +941,14 @@ namespace RemnantSaveManager
         {
             System.Windows.Forms.FolderBrowserDialog openFolderDialog = new System.Windows.Forms.FolderBrowserDialog();
             openFolderDialog.SelectedPath = backupDirPath;
-            openFolderDialog.Description = "Select the folder where you want your backup saves kept.";
+            openFolderDialog.Description = "选择要备份存档的文件夹。";
             System.Windows.Forms.DialogResult result = openFolderDialog.ShowDialog();
             if (result == System.Windows.Forms.DialogResult.OK)
             {
                 string folderName = openFolderDialog.SelectedPath;
                 if (folderName.Equals(saveDirPath))
                 {
-                    MessageBox.Show("Please select a folder other than the game's save folder.",
+                    MessageBox.Show("请选择游戏存档文件夹以外的文件夹。",
                                      "Invalid Folder", MessageBoxButton.OK, MessageBoxImage.Warning, MessageBoxResult.OK);
                     return;
                 }
@@ -921,8 +958,8 @@ namespace RemnantSaveManager
                 }
                 if (listBackups.Count > 0)
                 {
-                    var confirmResult = MessageBox.Show("Do you want to move your backups to this new folder?",
-                                     "Move Backups", MessageBoxButton.YesNo, MessageBoxImage.Question, MessageBoxResult.No);
+                    var confirmResult = MessageBox.Show("您是否要将备份移动到此新文件夹?",
+                                     "移动备份", MessageBoxButton.YesNo, MessageBoxImage.Question, MessageBoxResult.No);
                     if (confirmResult == MessageBoxResult.Yes)
                     {
                         List<String> backupFiles = Directory.GetDirectories(backupDirPath).ToList();
@@ -968,7 +1005,7 @@ namespace RemnantSaveManager
             else
             {
                 TimeSpan span = (lastUpdateCheck.AddMinutes(10) - DateTime.Now);
-                logMessage("Please wait " + span.Minutes+" minutes, "+span.Seconds+" seconds before checking for update.");
+                logMessage("请稍候 " + span.Minutes+" 分钟, "+span.Seconds+" 检查更新前的秒数.");
             }
         }
 
@@ -982,56 +1019,55 @@ namespace RemnantSaveManager
         {
             if (isRemnantRunning())
             {
-                logMessage("Exit the game before restoring a save backup.");
+                logMessage("在还原存档备份之前退出游戏.", LogType.Error);
                 return;
             }
 
             if (dataBackups.SelectedItem == null)
             {
-                logMessage("Choose a backup to restore from the list!");
+                logMessage("从列表中选择要还原的备份!", LogType.Error);
                 return;
             }
 
             SaveBackup selectedBackup = (SaveBackup)dataBackups.SelectedItem;
             if (selectedBackup.Save.Characters.Count != activeSave.Characters.Count)
             {
-                logMessage("Backup character count does not match current character count.");
-                MessageBoxResult confirmResult = MessageBox.Show("The active save has a different number of characters than the backup worlds you are restoring. This may result in unexpected behavior. Proceed?",
-                                     "Character Mismatch", MessageBoxButton.YesNo, MessageBoxImage.Warning, MessageBoxResult.No);
+                logMessage("备份字符数与当前字符数不匹配.");
+                MessageBoxResult confirmResult = MessageBox.Show("激活的存档的字符数与要还原的备份世界的字符数不同。 这可能会导致意外问题。 继续?",
+                                     "字符不匹配", MessageBoxButton.YesNo, MessageBoxImage.Warning, MessageBoxResult.No);
                 if (confirmResult == MessageBoxResult.No)
                 {
-                    logMessage("Canceling world restore.");
+                    logMessage("取消世界还原.");
                     return;
                 }
             }
 
-            if (this.ActiveSaveIsBackedUp)
+            if (!this.ActiveSaveIsBackedUp)
             {
-                saveWatcher.EnableRaisingEvents = false;
-                System.IO.DirectoryInfo di = new DirectoryInfo(saveDirPath);
-                foreach (FileInfo file in di.GetFiles("save_?.sav"))
-                {
-                    file.Delete();
-                }
-                di = new DirectoryInfo(backupDirPath + "\\" + selectedBackup.SaveDate.Ticks);
-                foreach (FileInfo file in di.GetFiles("save_?.sav"))
-                    File.Copy(file.FullName, saveDirPath + "\\" + file.Name);
-                foreach (SaveBackup saveBackup in listBackups)
-                {
-                    saveBackup.Active = false;
-                }
-                updateCurrentWorldAnalyzer();
-                dataBackups.Items.Refresh();
-                this.ActiveSaveIsBackedUp = false;
-                btnBackup.IsEnabled = false;
-                btnBackup.Content = FindResource("SaveGrey");
-                logMessage("Backup world data restored!");
-                saveWatcher.EnableRaisingEvents = Properties.Settings.Default.AutoBackup;
+                doBackup();
             }
-            else
+
+            saveWatcher.EnableRaisingEvents = false;
+            System.IO.DirectoryInfo di = new DirectoryInfo(saveDirPath);
+            foreach (FileInfo file in di.GetFiles("save_?.sav"))
             {
-                logMessage("Backup your current save before restoring another!");
+                file.Delete();
             }
+            di = new DirectoryInfo(backupDirPath + "\\" + selectedBackup.SaveDate.Ticks);
+            foreach (FileInfo file in di.GetFiles("save_?.sav"))
+                File.Copy(file.FullName, saveDirPath + "\\" + file.Name);
+            foreach (SaveBackup saveBackup in listBackups)
+            {
+                saveBackup.Active = false;
+            }
+            File.SetLastWriteTime(saveDirPath + "\\profile.sav", DateTime.Now);
+            updateCurrentWorldAnalyzer();
+            dataBackups.Items.Refresh();
+            this.ActiveSaveIsBackedUp = false;
+            btnBackup.IsEnabled = false;
+            btnBackup.Content = FindResource("SaveGrey");
+            logMessage("备份世界数据已还原!", LogType.Success);
+            saveWatcher.EnableRaisingEvents = Properties.Settings.Default.AutoBackup;
         }
 
         private void chkCreateLogFile_Click(object sender, RoutedEventArgs e)
@@ -1058,6 +1094,13 @@ namespace RemnantSaveManager
             Properties.Settings.Default.ShowPossibleItems = newValue;
             Properties.Settings.Default.Save();
             updateCurrentWorldAnalyzer();
+        }
+
+        private void chkAutoCheckUpdate_Click(object sender, RoutedEventArgs e)
+        {
+            bool newValue = chkAutoCheckUpdate.IsChecked.HasValue ? chkAutoCheckUpdate.IsChecked.Value : false;
+            Properties.Settings.Default.AutoCheckUpdate = newValue;
+            Properties.Settings.Default.Save();
         }
     }
 }

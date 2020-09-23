@@ -73,19 +73,19 @@ namespace RemnantSaveManager
             lblCredits.FontSize = sliderSize.Value;
             initialized = true;
             TreeViewItem nodeNormal = new TreeViewItem();
-            nodeNormal.Header = "Normal";
+            nodeNormal.Header = "标准";
             nodeNormal.Foreground = treeMissingItems.Foreground;
             nodeNormal.IsExpanded = Properties.Settings.Default.NormalExpanded;
             nodeNormal.Expanded += GameType_CollapsedExpanded;
             nodeNormal.Collapsed += GameType_CollapsedExpanded;
             TreeViewItem nodeHardcore = new TreeViewItem();
-            nodeHardcore.Header = "Hardcore";
+            nodeHardcore.Header = "硬核";
             nodeHardcore.Foreground = treeMissingItems.Foreground;
             nodeHardcore.IsExpanded = Properties.Settings.Default.HardcoreExpanded;
             nodeHardcore.Expanded += GameType_CollapsedExpanded;
             nodeHardcore.Collapsed += GameType_CollapsedExpanded;
             TreeViewItem nodeSurvival = new TreeViewItem();
-            nodeSurvival.Header = "Survival";
+            nodeSurvival.Header = "生存";
             nodeSurvival.Foreground = treeMissingItems.Foreground;
             nodeSurvival.IsExpanded = Properties.Settings.Default.SurvivalExpanded;
             nodeSurvival.Expanded += GameType_CollapsedExpanded;
@@ -238,7 +238,7 @@ namespace RemnantSaveManager
                     e.Cancel = true;
                     return;
                 }
-                e.Column.Header = "Possible Items";
+                e.Column.Header = "All Items";
                 e.Column.CellStyle.Setters.Add(new Setter(DataGridCell.FontSizeProperty, ((fontSize / 3) * 2)));
                 if (Properties.Settings.Default.MissingItemColor.Equals("Red"))
                 {

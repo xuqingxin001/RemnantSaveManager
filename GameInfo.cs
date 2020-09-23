@@ -213,7 +213,7 @@ namespace RemnantSaveManager
                         File.Move("TempGameInfo.xml", "GameInfo.xml");
                         RefreshGameInfo();
                         args.Result = GameInfoUpdateResult.Updated;
-                        args.Message = "Game info updated from v"+localversion+" to v"+remoteversion+".";
+                        args.Message = "游戏信息更新自 v" + localversion+ " 到 v" + remoteversion+".";
                     }
                     else
                     {
@@ -224,12 +224,12 @@ namespace RemnantSaveManager
                     File.Move("TempGameInfo.xml", "GameInfo.xml");
                     RefreshGameInfo();
                     args.Result = GameInfoUpdateResult.Updated;
-                    args.Message = "No local game info found; updated to v"+remoteversion+".";
+                    args.Message = "未找到本地游戏信息；已更新为 v" + remoteversion+".";
                 }
             } catch (Exception ex)
             {
                 args.Result = GameInfoUpdateResult.Failed;
-                args.Message = "Error checking for new game info: " + ex.Message;
+                args.Message = "检查新游戏信息时出错: " + ex.Message;
             }
 
             OnGameInfoUpdate(args);
@@ -252,7 +252,7 @@ namespace RemnantSaveManager
         {
             this.LocalVersion = 0;
             this.RemoteVersion = 0;
-            this.Message = "No new game info found.";
+            this.Message = "未找到新游戏信息.";
             this.Result = GameInfoUpdateResult.NoUpdate;
         }
     }

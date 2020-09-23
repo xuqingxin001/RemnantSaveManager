@@ -129,9 +129,9 @@ namespace RemnantSaveManager
                     else if (textLine.Contains("Quest_Church"))
                     {
                         //process Root Mother event
-                        currentMainLocation = "Chapel Station";
+                        currentMainLocation = "教堂车站";
                         eventName = "RootMother";
-                        currentSublocation = "Church of the Harbinger";
+                        currentSublocation = "先驱者教堂";
                     }
                     else if (eventType != null)
                     {
@@ -156,7 +156,7 @@ namespace RemnantSaveManager
                         {
                             if (textLine.Contains("Quest_Boss"))
                             {
-                                currentMainLocation = "Westcourt";
+                                currentMainLocation = "西苑";
                             } else
                             {
                                 currentSublocation = null;
@@ -212,8 +212,8 @@ namespace RemnantSaveManager
                                     RemnantWorldEvent ringdrop = new RemnantWorldEvent();
                                     ringdrop.Location = zone;
                                     ringdrop.setKey("SoulLink");
-                                    ringdrop.Name = "Soul Link";
-                                    ringdrop.Type = "Item Drop";
+                                    ringdrop.Name = "灵魂连接";
+                                    ringdrop.Type = "世界掉落物";
                                     ringdrop.setMissingItems(character);
                                     zoneEvents[zone].Add(ringdrop);
                                 }
@@ -223,18 +223,18 @@ namespace RemnantSaveManager
                                     RemnantWorldEvent beetle = new RemnantWorldEvent();
                                     beetle.Location = se.Location;
                                     beetle.setKey("Sketterling");
-                                    beetle.Name = "Sketterling";
-                                    beetle.Type = "Loot Beetle";
+                                    beetle.Name = "圣甲虫";
+                                    beetle.Type = "甲虫战利品";
                                     beetle.setMissingItems(character);
                                     zoneEvents[zone].Add(beetle);
                                 }
-                                else if (eventName.Equals("BarnSiege"))
+                                else if (eventName.Equals("BarnSiege") || eventName.Equals("Homestead"))
                                 {
                                     RemnantWorldEvent wardPrime = new RemnantWorldEvent();
                                     wardPrime.setKey("WardPrime");
-                                    wardPrime.Name = "Ward Prime";
-                                    wardPrime.Location = "Earth: Ward Prime";
-                                    wardPrime.Type = "Quest Event";
+                                    wardPrime.Name = "主实验区";
+                                    wardPrime.Location = "地球: 主实验区";
+                                    wardPrime.Type = "主线任务";
                                     wardPrime.setMissingItems(character);
                                     zoneEvents[zone].Add(wardPrime);
                                 }
@@ -265,48 +265,48 @@ namespace RemnantSaveManager
             if (mode == ProcessMode.Campaign)
             {
                 ward13.setKey("Ward13");
-                ward13.Name = "Ward 13";
-                ward13.Location = "Earth: Ward 13";
-                ward13.Type = "Home";
+                ward13.Name = "13号实验区";
+                ward13.Location = "地球: 13号实验区";
+                ward13.Type = "家";
                 ward13.setMissingItems(character);
                 if (ward13.MissingItems.Length > 0) orderedEvents.Add(ward13);
 
                 hideout.setKey("FoundersHideout");
-                hideout.Name = "Founder's Hideout";
-                hideout.Location = "Earth: Fairview";
-                hideout.Type = "Point of Interest";
+                hideout.Name = "创始人的藏身处";
+                hideout.Location = "地球: 美景镇";
+                hideout.Type = "兴趣点";
                 hideout.setMissingItems(character);
                 if (hideout.MissingItems.Length > 0) orderedEvents.Add(hideout);
 
                 undying.setKey("UndyingKing");
-                undying.Name = "Undying King";
-                undying.Location = "Rhom: Undying Throne";
-                undying.Type = "World Boss";
+                undying.Name = "不灭之王";
+                undying.Location = "洛姆: 不灭王座";
+                undying.Type = "世界首领";
                 undying.setMissingItems(character);
 
-                queen.Name = "Iskal Queen";
+                queen.Name = "伊斯卡尔女王";
                 queen.setKey("IskalQueen");
-                queen.Location = "Corsus: The Mist Fen";
-                queen.Type = "Point of Interest";
+                queen.Location = "克尔苏斯: 迷雾沼泽";
+                queen.Type = "兴趣点";
                 queen.setMissingItems(character);
 
-                navun.Name = "Fight With The Rebels";
+                navun.Name = "与叛军战斗";
                 navun.setKey("SlaveRevolt");
-                navun.Location = "Yaesha: Shrine of the Immortals";
-                navun.Type = "Siege";
+                navun.Location = "耶莎:  不朽者神祠";
+                navun.Type = "围攻";
                 navun.setMissingItems(character);
 
                 ward17.setKey("Ward17");
-                ward17.Name = "The Dreamer";
-                ward17.Location = "Earth: Ward 17";
-                ward17.Type = "World Boss";
+                ward17.Name = "梦游者";
+                ward17.Location = "地球: 17号实验区";
+                ward17.Type = "世界首领";
                 ward17.setMissingItems(character);
             }
 
-            for (int i = 0; i < zoneEvents["Earth"].Count; i++)
+            for (int i = 0; i < zoneEvents["地球"].Count; i++)
             {
                 //if (mode == ProcessMode.Subject2923) Console.WriteLine(zoneEvents["Earth"][i].eventKey);
-                if (mode == ProcessMode.Campaign && !churchAdded && zoneEvents["Earth"][i].Location.Contains("Westcourt"))
+                if (mode == ProcessMode.Campaign && !churchAdded && zoneEvents["地球"][i].Location.Contains("Westcourt"))
                 {
                     foreach (RemnantWorldEvent rwe in churchEvents)
                     {
@@ -314,39 +314,39 @@ namespace RemnantSaveManager
                     }
                     churchAdded = true;
                 }
-                orderedEvents.Add(zoneEvents["Earth"][i]);
+                orderedEvents.Add(zoneEvents["地球"][i]);
             }
-            for (int i = 0; i < zoneEvents["Rhom"].Count; i++)
+            for (int i = 0; i < zoneEvents["洛姆"].Count; i++)
             {
-                orderedEvents.Add(zoneEvents["Rhom"][i]);
+                orderedEvents.Add(zoneEvents["洛姆"][i]);
             }
             if (mode == ProcessMode.Campaign && undying.MissingItems.Length > 0) orderedEvents.Add(undying);
-            for (int i = 0; i < zoneEvents["Corsus"].Count; i++)
+            for (int i = 0; i < zoneEvents["莱森"].Count; i++)
             {
-                if (mode == ProcessMode.Campaign && !queenAdded && zoneEvents["Corsus"][i].Location.Contains("The Mist Fen"))
+                if (mode == ProcessMode.Campaign && !queenAdded && zoneEvents["莱森"][i].Location.Contains("The Mist Fen"))
                 {
                     if (queen.MissingItems.Length > 0) orderedEvents.Add(queen);
                     queenAdded = true;
                 }
-                orderedEvents.Add(zoneEvents["Corsus"][i]);
+                orderedEvents.Add(zoneEvents["莱森"][i]);
             }
-            for (int i = 0; i < zoneEvents["Yaesha"].Count; i++)
+            for (int i = 0; i < zoneEvents["耶莎"].Count; i++)
             {
-                if (mode == ProcessMode.Campaign && !navunAdded && zoneEvents["Yaesha"][i].Location.Contains("The Scalding Glade"))
+                if (mode == ProcessMode.Campaign && !navunAdded && zoneEvents["耶莎"][i].Location.Contains("The Scalding Glade"))
                 {
                     if (navun.MissingItems.Length > 0) orderedEvents.Add(navun);
                     navunAdded = true;
                 }
-                orderedEvents.Add(zoneEvents["Yaesha"][i]);
+                orderedEvents.Add(zoneEvents["耶莎"][i]);
             }
-            for (int i = 0; i < zoneEvents["Reisum"].Count; i++)
+            for (int i = 0; i < zoneEvents["克尔苏斯"].Count; i++)
             {
                 /*if (mode == ProcessMode.Campaign && !navunAdded && zoneEvents["Yaesha"][i].Location.Contains("The Scalding Glade"))
                 {
                     if (navun.MissingItems.Length > 0) orderedEvents.Add(navun);
                     navunAdded = true;
                 }*/
-                orderedEvents.Add(zoneEvents["Reisum"][i]);
+                orderedEvents.Add(zoneEvents["克尔苏斯"][i]);
             }
 
             if (mode == ProcessMode.Campaign)
@@ -369,9 +369,9 @@ namespace RemnantSaveManager
             if (mode == ProcessMode.Subject2923)
             {
                 ward17.setKey("Ward17Root");
-                ward17.Name = "Harsgaard";
-                ward17.Location = "Earth: Ward 17 (Root Dimension)";
-                ward17.Type = "World Boss";
+                ward17.Name = "哈斯加德";
+                ward17.Location = "地球: 17号实验区 (根蔓次元)";
+                ward17.Type = "世界首领";
                 ward17.setMissingItems(character);
                 character.CampaignEvents.Add(ward17);
             }
@@ -382,23 +382,23 @@ namespace RemnantSaveManager
             string zone = null;
             if (textLine.Contains("World_City") || textLine.Contains("Quest_Church") || textLine.Contains("World_Rural"))
             {
-                zone = "Earth";
+                zone = "地球";
             }
             else if (textLine.Contains("World_Wasteland"))
             {
-                zone = "Rhom";
+                zone = "洛姆";
             }
             else if (textLine.Contains("World_Jungle"))
             {
-                zone = "Yaesha";
+                zone = "耶莎";
             }
             else if (textLine.Contains("World_Swamp"))
             {
-                zone = "Corsus";
+                zone = "克尔苏斯";
             }
             else if (textLine.Contains("World_Snow") || textLine.Contains("Campaign_Clementine"))
             {
-                zone = "Reisum";
+                zone = "莱森";
             }
             return zone;
         }
@@ -408,38 +408,38 @@ namespace RemnantSaveManager
             string eventType = null;
             if (textLine.Contains("SmallD"))
             {
-                eventType = "Side Dungeon";
+                eventType = "支线地下城";
             }
             else if (textLine.Contains("Quest_Boss"))
             {
-                eventType = "World Boss";
+                eventType = "世界首领";
             }
             else if (textLine.Contains("Siege")|| textLine.Contains("Quest_Church"))
             {
-                eventType = "Siege";
+                eventType = "围攻";
             }
             else if (textLine.Contains("Mini"))
             {
-                eventType = "Miniboss";
+                eventType = "小首领";
             }
             else if (textLine.Contains("Quest_Event"))
             {
                 if (textLine.Contains("Nexus"))
                 {
-                    eventType = "Siege";
+                    eventType = "围攻";
                 }
                 else if (textLine.Contains("Sketterling"))
                 {
-                    eventType = "Loot Beetle";
+                    eventType = "甲虫战利品";
                 }
                 else
                 {
-                    eventType = "Item Drop";
+                    eventType = "世界掉落物";
                 }
             }
             else if (textLine.Contains("OverworldPOI") || textLine.Contains("OverWorldPOI") || textLine.Contains("OverworlPOI"))
             {
-                eventType = "Point of Interest";
+                eventType = "兴趣点";
             }
             return eventType;
         }

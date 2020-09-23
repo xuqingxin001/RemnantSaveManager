@@ -27,16 +27,16 @@ namespace RemnantSaveManager
                 try
                 {
                     itemKey = value;
-                    itemType = "Uncategorized";
+                    itemType = "未分类";
                     itemName = itemKey.Substring(itemKey.LastIndexOf('/') + 1);
                     if (itemKey.Contains("/Weapons/"))
                     {
-                        itemType = "Weapon";
+                        itemType = "武器";
                         if (itemName.Contains("Mod_")) itemName = itemName.Replace("/Weapons/", "/Mods/");
                     }
                     if (itemKey.Contains("/Armor/") || itemKey.Contains("TwistedMask"))
                     {
-                        itemType = "Armor";
+                        itemType = "护甲";
                         if (itemKey.Contains("TwistedMask"))
                         {
                             itemName = "TwistedMask (Head)";
@@ -47,10 +47,10 @@ namespace RemnantSaveManager
                             itemName = parts[2] + " (" + parts[1] + ")";
                         }
                     }
-                    if (itemKey.Contains("/Trinkets/") || itemKey.Contains("BrabusPocketWatch")) itemType = "Trinket";
-                    if (itemKey.Contains("/Mods/")) itemType = "Mod";
-                    if (itemKey.Contains("/Traits/")) itemType = "Trait";
-                    if (itemKey.Contains("/Emotes/")) itemType = "Emote";
+                    if (itemKey.Contains("/Trinkets/") || itemKey.Contains("BrabusPocketWatch")) itemType = "饰品";
+                    if (itemKey.Contains("/Mods/")) itemType = "配件";
+                    if (itemKey.Contains("/Traits/")) itemType = "特性";
+                    if (itemKey.Contains("/Emotes/")) itemType = "动作";
 
                     itemName = itemName.Replace("Weapon_", "").Replace("Root_", "").Replace("Wasteland_", "").Replace("Swamp_", "").Replace("Pan_", "").Replace("Atoll_", "").Replace("Mod_", "").Replace("Trinket_", "").Replace("Trait_", "").Replace("Quest_", "").Replace("Emote_", "").Replace("Rural_", "").Replace("Snow_", "");
                     if (!itemType.Equals("Armor"))
@@ -60,7 +60,7 @@ namespace RemnantSaveManager
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine("Error processing item name: " + ex.Message);
+                    Console.WriteLine("处理物品名称时出错: " + ex.Message);
                     itemName = value;
                 }
             } 
