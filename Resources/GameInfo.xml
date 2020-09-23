@@ -1,137 +1,141 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<GameInfo version="37">
+<GameInfo version="39">
   <Zones>
-    <Zone name="地球" />
-    <Zone name="Rhom"/>
-    <Zone name="Corsus"/>
-    <Zone name="Yaesha"/>
-    <Zone name="Reisum"/>
+    <Zone name="地球"/>
+    <Zone name="洛姆"/>
+    <Zone name="克尔苏斯"/>
+    <Zone name="耶莎"/>
+    <Zone name="莱森"/>
   </Zones>
   <SubLocations>
-    <SubLocation eventName="ArmorVault" location="VaultOfTheHeralds"/>
-    <SubLocation eventName="BarbTerror" location="NeedleLair"/>
-    <SubLocation eventName="BlinkFiend" location="Widow'sPass"/>
-    <SubLocation eventName="BlinkThief" location="ForgottenUndercroft"/>
-    <SubLocation eventName="BlizzardMage" location="WutheringKeep"/>
+    <SubLocation eventName="ArmorVault" location="传令官的地下室"/>
+    <SubLocation eventName="BarbTerror" location="针刺巢穴"/>
+    <SubLocation eventName="BlinkFiend" location="寡妇隘口"/>
+    <SubLocation eventName="BlinkThief" location="遗忘地穴"/>
+    <SubLocation eventName="BlizzardMage" location="呼啸要塞"/>
     <SubLocation eventName="Brabus" location="割喉渠道"/>
-    <SubLocation eventName="BrainBug" location="StrangePass"/>
-    <SubLocation eventName="CreepersPeeper" location="Watcher'sHollow"/>
-    <SubLocation eventName="DoeShrine" location="Widow'sVestry"/>
-    <SubLocation eventName="Fatty" location="TheFetidGlade"/>
-    <SubLocation eventName="FlickeringHorror" location="HallOfWhispers"/>
-    <SubLocation eventName="FrozenLords" location="Judgment'sSpear"/>
-    <SubLocation eventName="Guardian" location="TheGuardian'sSanctum"/>
-    <SubLocation eventName="HoundMaster" location="TheBurrows"/>
+    <SubLocation eventName="BrainBug" location="奇异隘口"/>
+    <SubLocation eventName="CreepersPeeper" location="观察者山谷"/>
+    <SubLocation eventName="DoeShrine" location="寡妇的法衣室"/>
+    <SubLocation eventName="Fatty" location="棚屋"/>
+    <SubLocation eventName="FlickeringHorror" location="低语之厅"/>
+    <SubLocation eventName="FrozenLords" location="审判之矛"/>
+    <SubLocation eventName="Guardian" location="守护者圣殿"/>
+    <SubLocation eventName="HoundMaster" location="地洞"/>
     <SubLocation eventName="HuntersHideout" location="隐秘石窟"/>
-    <SubLocation eventName="ImmolatorAndZephyr" location="WitheringVillage"/>
-    <SubLocation eventName="IceSkimmer" location="TheFrieranSea"/>
-    <SubLocation eventName="KinCaller" location="TheHallOfJudgement"/>
+    <SubLocation eventName="ImmolatorAndZephyr" location="枯萎村庄"/>
+    <SubLocation eventName="IceSkimmer" location="弗烈然海"/>
+    <SubLocation eventName="KinCaller" location="审判大厅"/>
     <SubLocation eventName="LastWill" location="哀伤原野"/>
     <SubLocation eventName="LizAndLiz" location="狡兔三窟"/>
     <SubLocation eventName="MadMerchant" location="垃圾镇"/>
-    <SubLocation eventName="RatRider" location="TheCrimsonHold"/>
+    <SubLocation eventName="RatRider" location="深红要塞"/>
     <SubLocation eventName="RootBrute" location="沉没通道"/>
     <SubLocation eventName="RootCultist" location="骨髓隘口"/>
     <SubLocation eventName="RootDragon" location="灰烬庭院"/>
     <SubLocation eventName="RootEnt" location="窒息山谷"/>
-    <SubLocation eventName="RootMother" location="ChurchOfTheHarbinger"/>
+    <SubLocation eventName="RootMother" location="先驱教堂"/>
     <SubLocation eventName="RootShrine" location="绞刑架"/>
     <SubLocation eventName="RootTumbleweed" location="纠结隘口"/>
     <SubLocation eventName="RootWraith" location="秘密圣所"/>
-    <SubLocation eventName="Sentinel" location="ShackledCanyon"/>
-    <SubLocation eventName="ShamanFlames" location="GraveOfTheElders"/>
-    <SubLocation eventName="ShieldWarden" location="Exile'sTrench"/>
-    <SubLocation eventName="SlimeHulk" location="TheDrownedTrench"/>
+    <SubLocation eventName="Sentinel" location="镣铐峡谷"/>
+    <SubLocation eventName="ShamanFlames" location="长者坟墓"/>
+    <SubLocation eventName="ShieldWarden" location="流放者壕沟"/>
+    <SubLocation eventName="SlimeHulk" location="淹没沟壕"/>
     <SubLocation eventName="Splitter" location="A号研究所"/>
-    <SubLocation eventName="StormCaller" location="Heretic'sNest"/>
-    <SubLocation eventName="StuckMerchant" location="MerchantDungeon"/>
-    <SubLocation eventName="SwampGuardian" location="TheGrotto"/>
-    <SubLocation eventName="SwarmMaster" location="TheIronRift"/>
-    <SubLocation eventName="TheCleanRoom" location="ThePurgeHall"/>
-    <SubLocation eventName="TheHarrow" location="TheBunker"/>
-    <SubLocation eventName="TheJackal" location="TheWildReach"/>
-    <SubLocation eventName="TheLostGantry" location="ConcourseOfTheSun"/>
-    <SubLocation eventName="TheRisen" location="Ahanae'sLament"/>
-    <SubLocation eventName="TotemFather" location="TheTempestCourt"/>
-    <SubLocation eventName="Tyrant" location="TheCapillary"/>
-    <SubLocation eventName="UndyingKing" location="UndyingThrone"/>
-    <SubLocation eventName="UrikkiBlademasters" location="ValenhaagMines"/>
-    <SubLocation eventName="Vyr" location="TheArdentTemple"/>
-    <SubLocation eventName="WarningTotems" location="Magir'sDirge"/>
-    <SubLocation eventName="WastelandGuardian" location="LoomOfTheBlackSun"/>
-    <SubLocation eventName="Wisp" location="CircletHatchery"/>
-    <SubLocation eventName="Wolf" location="TheRavager'sHaunt"/>
-    <SubLocation eventName="WolfShrine" location="TempleOfTheRavager"/>
+    <SubLocation eventName="StormCaller" location="异教徒巢穴"/>
+    <SubLocation eventName="StuckMerchant" location="遇难商人"/>
+    <SubLocation eventName="SwampGuardian" location="石窟"/>
+    <SubLocation eventName="SwarmMaster" location="钢铁裂隙"/>
+    <SubLocation eventName="TheCleanRoom" location="清洗大厅"/>
+    <SubLocation eventName="TheHarrow" location="地堡"/>
+    <SubLocation eventName="TheJackal" location="蛮荒边境"/>
+    <SubLocation eventName="TheLostGantry" location="太阳合流"/>
+    <SubLocation eventName="TheRisen" location="阿哈内之挽歌"/>
+    <SubLocation eventName="TotemFather" location="暴风议会"/>
+    <SubLocation eventName="Tyrant" location="毛细管"/>
+    <SubLocation eventName="UndyingKing" location="不灭王座"/>
+    <SubLocation eventName="UrikkiBlademasters" location="维纶哈格矿山"/>
+    <SubLocation eventName="Vyr" location="热诚神庙"/>
+    <SubLocation eventName="WarningTotems" location="玛吉尔之挽歌"/>
+    <SubLocation eventName="WastelandGuardian" location="黑日隐像"/>
+    <SubLocation eventName="Wisp" location="环形孵化场"/>
+    <SubLocation eventName="Wolf" location="劫掠者出没之地"/>
+    <SubLocation eventName="WolfShrine" location="劫掠者神庙"/>
   </SubLocations>
   <MainLocations>
-    <MainLocation key="City Overworld Zone1" name="Fairview"/>
+    <MainLocation key="City Overworld Zone1" name="美景镇"/>
     <MainLocation key="City Overworld Zone2" name="西苑"/>
-    <MainLocation key="Wasteland Overworld Zone1" name="TheEasternWind"/>
-    <MainLocation key="Wasteland Overworld Zone2" name="TheScouringWaste"/>
-    <MainLocation key="Swamp Overworld Zone1" name="TheFetidGlade"/>
-    <MainLocation key="Swamp Overworld Zone2" name="TheMistFen"/>
-    <MainLocation key="Jungle Overworld Zone1" name="TheVerdantStrand"/>
-    <MainLocation key="Jungle Overworld Zone2" name="TheScaldingGlade"/>
-    <MainLocation key="Rural Overworld 01" name="Rural"/>
-    <MainLocation key="Rural Overworld 02" name="Rural"/>
-    <MainLocation key="Snow Overworld Zone1" name="DrolniirWoods"/>
-    <MainLocation key="Snow Overworld Zone2" name="DeepfrostExpanse"/>
+    <MainLocation key="Wasteland Overworld Zone1" name="东风"/>
+    <MainLocation key="Wasteland Overworld Zone2" name="冲刷荒原"/>
+    <MainLocation key="Swamp Overworld Zone1" name="恶臭林地"/>
+    <MainLocation key="Swamp Overworld Zone2" name="迷雾沼泽"/>
+    <MainLocation key="Jungle Overworld Zone1" name="青翠海滨"/>
+    <MainLocation key="Jungle Overworld Zone2" name="烫伤林地"/>
+    <MainLocation key="Rural Overworld 01" name="寒意山丘"/>
+    <MainLocation key="Rural Overworld 02" name="乡村"/>
+    <MainLocation key="Snow Overworld Zone1" name="德罗尼尔森林"/>
+    <MainLocation key="Snow Overworld Zone2" name="极寒旷野"/>
   </MainLocations>
-  <EventItems>
-    <Event name="AbandonedThrone">
-      <Item>/Items/Traits/Trait_Luminescent</Item>
+   <EventItems>
+    <Event name="TraitBook" altname="知识手卷">
     </Event>
-    <Event name="AbrasiveAmulet">
-      <Item notes="Random drop on Corsus">/Items/Trinkets/Trinket_AbrasiveAmulet</Item>
+	<Event name="Simulacrum" altname="拟像">
     </Event>
-    <Event name="AcesCoin" altname="奇怪硬币">
-      <Item>/Items/Weapons/Basic/HandGuns/Revolver/Weapon_Revolver</Item>
+    <Event name="AbandonedThrone" altname="废弃王座">
+      <Item altname="发光">/Items/Traits/Trait_Luminescent</Item>
     </Event>
-    <Event name="Afterbirth" altname="ChillwindHovel">
-      <Item dlc="Subject 2923">/Items/Trinkets/ScavengersRing</Item>
-      <Item dlc="Subject 2923" notes="Speak to mother at Chillwind Hovel, then free Krall Baby">/Items/Trinkets/BlessedNecklace</Item>
+    <Event name="AbrasiveAmulet" altname="粗糙项链">
+      <Item altname="粗糙项链" notes="Random drop on Corsus">/Items/Trinkets/Trinket_AbrasiveAmulet</Item>
+    </Event>
+    <Event name="AcesCoin" altname="奇怪的硬币">
+      <Item altname="马格南左轮手枪">/Items/Weapons/Basic/HandGuns/Revolver/Weapon_Revolver</Item>
+    </Event>
+    <Event name="Afterbirth" altname="寒风棚舍">
+      <Item altname="拾荒者戒指" dlc="Subject 2923">/Items/Trinkets/ScavengersRing</Item>
+      <Item altname="祝福项链" dlc="Subject 2923" notes="Free Krall Baby then speak to mother at Chillwind Hovel">/Items/Trinkets/BlessedNecklace</Item>
     </Event>
     <Event name="AggressorsBane" altname="入侵者之灾祸">
       <Item altname="入侵者之灾祸">/Items/Trinkets/AggressorsBane</Item>
     </Event>
-    <Event name="AlchemistsJewel" altname="Alchemist'sJewel">
-      <Item dlc="Subject 2923">/Items/Trinkets/Trinket_AlchemistsJewel</Item>
+    <Event name="AlchemistsJewel" altname="炼金术师的珠宝">
+      <Item altname="炼金术师的珠宝" dlc="Subject 2923">/Items/Trinkets/Trinket_AlchemistsJewel</Item>
     </Event>
-    <Event name="ArmorVault">
-      <Item>/Items/Armor/Akari/Armor_Head_Akari</Item>
-      <Item>/Items/Armor/Akari/Armor_Body_Akari</Item>
-      <Item>/Items/Armor/Akari/Armor_Legs_Akari</Item>
+    <Event name="ArmorVault" altname="装备库">
+      <Item altname="阿卡里面具">/Items/Armor/Akari/Armor_Head_Akari</Item>
+      <Item altname="阿卡里服装">/Items/Armor/Akari/Armor_Body_Akari</Item>
+      <Item altname="阿卡里绑腿">/Items/Armor/Akari/Armor_Legs_Akari</Item>
     </Event>
-    <Event name="BackbreakerRing">
-      <Item dlc="Subject 2923" notes="Random drop on Rural Earth">/Items/Trinkets/BackbreakerRing</Item>
+    <Event name="BackbreakerRing" altname="辛劳戒指">
+      <Item altname="辛劳戒指" dlc="Subject 2923" notes="Random drop on Rural Earth">/Items/Trinkets/BackbreakerRing</Item>
     </Event>
     <Event name="BandOfCastor" altname="卡斯托指环">
       <Item altname="卡斯托指环">/Items/Trinkets/BandsOfCastorAndPollux/Trinket_BandOfCastor</Item>
     </Event>
     <Event name="BandOfPollux" altname="帕勒克指环">
-      <Item>/Items/Trinkets/BandsOfCastorAndPollux/Trinket_BandOfPollux</Item>
+      <Item altname="帕勒克指环">/Items/Trinkets/BandsOfCastorAndPollux/Trinket_BandOfPollux</Item>
     </Event>
-    <Event name="BandOfStrength">
-      <Item>/Items/Trinkets/BandOfStrength</Item>
+    <Event name="BandOfStrength" altname="力量指环">
+      <Item altname="力量指环">/Items/Trinkets/BandOfStrength</Item>
     </Event>
-    <Event name="BarbTerror" altname="BarbedTerror">
-      <Item>/Items/Mods/UnstableQuills</Item>
+    <Event name="BarbTerror" altname="倒刺恐魔">
+      <Item altname="易爆刚毛">/Items/Mods/UnstableQuills</Item>
     </Event>
-    <Event name="BarnSiege">
-      <Item dlc="Subject 2923">/Items/Trinkets/HangmansMemento</Item>
+    <Event name="BarnSiege" altname="谷仓围攻">
+      <Item altname="绞刑吏的纪念品" dlc="Subject 2923">/Items/Trinkets/HangmansMemento</Item>
     </Event>
-    <Event name="BlinkFiend" altname="Onslaught">
-      <Item>/Items/Mods/BlinkToken</Item>
+    <Event name="BlinkFiend" altname="猛攻">
+      <Item altname="闪烁令牌">/Items/Mods/BlinkToken</Item>
+    </Event>-***-
+    <Event name="BlinkThief" altname="闪烁盗贼">
+      <Item altname="弹跳步枪">/Items/Weapons/Basic/RicochetRifle/Weapon_Pan_RicochetRifle</Item>
+      <Item altname="迅敏之石">/Items/Trinkets/Trinket_CelerityStone</Item>
     </Event>
-    <Event name="BlinkThief">
-      <Item>/Items/Weapons/Basic/RicochetRifle/Weapon_Pan_RicochetRifle</Item>
-      <Item>/Items/Trinkets/Trinket_CelerityStone</Item>
+    <Event name="BlizzardMage" altname="寒冰咒术师伊克洛">
+      <Item altname="暴风雪" dlc="Subject 2923">/Items/Mods/Blizzard</Item>
     </Event>
-    <Event name="BlizzardMage" altname="IkroTheIceConjurer">
-      <Item dlc="Subject 2923">/Items/Mods/Blizzard</Item>
-    </Event>
-    <Event name="BloodFont">
-      <Item>/Items/Trinkets/Trinket_BloodFont</Item>
+    <Event name="BloodFont" altname="血泉">
+      <Item altname="血泉">/Items/Trinkets/Trinket_BloodFont</Item>
     </Event>
     <Event name="Brabus" altname="布拉巴斯">
       <Item altname="爆炸射击">/Items/Mods/ExplosiveShot</Item>
@@ -140,120 +144,120 @@
       <Item altname="强盗裤子">/Items/Armor/Bandit/Armor_Legs_Bandit</Item>
       <Item altname="冷若冰霜">/Items/Traits/Trait_ColdAsIce</Item>
     </Event>
-    <Event name="BrainBug" altname="Mar'gosh">
-      <Item dlc="Swamps of Corsus" altname="Gift of the Iskal">/Items/Trinkets/GIftOfTheIskal</Item>
-      <Item dlc="Swamps of Corsus">/Items/Armor/Carapace/Armor_Head_Carapace</Item>
-      <Item dlc="Swamps of Corsus">/Items/Armor/Carapace/Armor_Body_Carapace</Item>
-      <Item dlc="Swamps of Corsus">/Items/Armor/Carapace/Armor_Legs_Carapace</Item>
-      <Item dlc="Swamps of Corsus">/Items/Traits/Trait_Luminescent</Item>
+    <Event name="BrainBug" altname="玛尔戈什">
+      <Item dlc="Swamps of Corsus" altname="伊斯卡尔的礼物">/Items/Trinkets/GIftOfTheIskal</Item>
+      <Item altname="甲壳巨盔" dlc="Swamps of Corsus">/Items/Armor/Carapace/Armor_Head_Carapace</Item>
+      <Item altname="甲壳腿" dlc="Swamps of Corsus">/Items/Armor/Carapace/Armor_Body_Carapace</Item>
+      <Item altname="甲壳腿甲" dlc="Swamps of Corsus">/Items/Armor/Carapace/Armor_Legs_Carapace</Item>
+      <Item altname="发光" dlc="Swamps of Corsus">/Items/Traits/Trait_Luminescent</Item>
     </Event>
-    <Event name="BrutalMark">
-      <Item>/Items/Trinkets/BrutalMark</Item>
+    <Event name="BrutalMark" altname="残暴印记">
+      <Item altname="残暴印记">/Items/Trinkets/BrutalMark</Item>
     </Event>
-    <Event name="BurdenOfTheReckless">
-      <Item notes="Random drop on Rhom">/Items/Trinkets/BurdenOfTheReckless</Item>
+    <Event name="BurdenOfTheReckless" altname="鲁莽者之负担"> 
+      <Item altname="鲁莽者之负担" notes="Random drop on Rhom">/Items/Trinkets/BurdenOfTheReckless</Item>
     </Event>
     <Event name="BurdenOfTheGambler" altname="赌徒之负担">
       <Item altname="赌徒之负担" notes="Random drop on Earth">/Items/Trinkets/BurdenOfTheGambler</Item>
     </Event>
-    <Event name="BurdenOfTheDevoted">
-      <Item notes="Random drop on Corsus">/Items/Trinkets/BurdenOfTheDevoted</Item>
+    <Event name="BurdenOfTheDevoted" altname="虔诚者之负担">
+      <Item altname="虔诚者之负担" notes="Random drop on Corsus">/Items/Trinkets/BurdenOfTheDevoted</Item>
     </Event>
-    <Event name="BurdenOfTheFollower">
-      <Item notes="Random drop on Yaesha">/Items/Trinkets/Trinket_BurdenOfTheFollower</Item>
+    <Event name="BurdenOfTheFollower" altname="追随者之负担">
+      <Item altname="追随者之负担" notes="Random drop on Yaesha">/Items/Trinkets/Trinket_BurdenOfTheFollower</Item>
     </Event>
-    <Event name="BurdenOfTheWarlord">
-      <Item dlc="Subject 2923" notes="Random drop on Reisum">/Items/Trinkets/Trinket_BurdenOfTheWarlord</Item>
+    <Event name="BurdenOfTheWarlord" altname="军阀之负担">
+      <Item altname="军阀之负担" dlc="Subject 2923" notes="Random drop on Reisum">/Items/Trinkets/Trinket_BurdenOfTheWarlord</Item>
     </Event>
-    <Event name="ButchersFetish">
-      <Item>/Items/Trinkets/ButchersFetish</Item>
+    <Event name="ButchersFetish" altname="屠夫灵偶">
+      <Item altname="屠夫灵偶">/Items/Trinkets/ButchersFetish</Item>
     </Event>
-    <Event name="CharcoalNecklace">
-      <Item dlc="Subject 2923" notes="Random drop on Reisum">/Items/Trinkets/CharcoalNecklace</Item>
+    <Event name="CharcoalNecklace" altname="焦炭项链">
+      <Item altname="焦炭项链" dlc="Subject 2923" notes="Random drop on Reisum">/Items/Trinkets/CharcoalNecklace</Item>
     </Event>
-    <Event name="CleansingJewel">
-      <Item>/Items/Trinkets/CleansingJewel</Item>
+    <Event name="CleansingJewel" altname="净化珠宝">
+      <Item altname="净化珠宝">/Items/Trinkets/CleansingJewel</Item>
     </Event>
-    <Event name="CompulsionLoop">
-      <Item>/Items/Trinkets/CompulsionLoop</Item>
+    <Event name="CompulsionLoop" altname="强制之环">
+      <Item altname="强制之环">/Items/Trinkets/CompulsionLoop</Item>
     </Event>
-    <Event name="CreepersPeeper">
-      <Item dlc="Subject 2923">/Items/Trinkets/SwashbucklersSignet</Item>
-      <Item dlc="Subject 2923" altname="Twin Shot">/Items/Weapons/Basic/MiniCrossbow/Weapon_MiniCrossbow</Item>
+    <Event name="CreepersPeeper" altname="爬行者的窥视者">
+      <Item dlc="Subject 2923" altname="剑客印章">/Items/Trinkets/SwashbucklersSignet</Item>
+      <Item dlc="Subject 2923" altname="双重射击">/Items/Weapons/Basic/MiniCrossbow/Weapon_MiniCrossbow</Item>
     </Event>
     <Event name="Cryptolith" altname="密码晶石">
-      <Item>/Items/Traits/Trait_Concentration</Item>
-      <Item>/Items/Traits/Trait_BloodBond</Item>
-      <Item>/Items/Armor/Armor_Head_Labyrinth</Item>
-      <Item>/Items/Armor/Armor_Body_Labyrinth</Item>
-      <Item>/Items/Armor/Armor_Legs_Labyrinth</Item>
+      <Item altname="集中">/Items/Traits/Trait_Concentration</Item>
+      <Item altname="血之纽带">/Items/Traits/Trait_BloodBond</Item>
+      <Item altname="迷宫头盔">/Items/Armor/Armor_Head_Labyrinth</Item>
+      <Item altname="迷宫护甲">/Items/Armor/Armor_Body_Labyrinth</Item>
+      <Item altname="迷宫腿甲">/Items/Armor/Armor_Legs_Labyrinth</Item>
     </Event>
-    <Event name="DeceiversBand">
-      <Item>/Items/Trinkets/DeceiversBand</Item>
+    <Event name="DeceiversBand" altname="欺骗者指环">
+      <Item altname="欺骗者指环">/Items/Trinkets/DeceiversBand</Item>
     </Event>
-    <Event name="DevouringLoop">
-      <Item>/Items/Trinkets/DevouringLoop</Item>
+    <Event name="DevouringLoop" altname="吞噬戒指">
+      <Item altname="吞噬戒指">/Items/Trinkets/DevouringLoop</Item>
     </Event>
-    <Event name="DoeShrine">
-      <Item>/Items/Trinkets/Trinket_ScavengersBauble</Item>
-      <Item>/Items/Traits/Trait_Swiftness</Item>
+    <Event name="DoeShrine" altname="母鹿神祠">
+      <Item altname="拾荒者饰品">/Items/Trinkets/Trinket_ScavengersBauble</Item>
+      <Item altname="迅敏">/Items/Traits/Trait_Swiftness</Item>
     </Event>
     <Event name="DrifterMask" altname="流浪者面罩">
       <Item altname="流浪者面罩">/Items/Armor/Drifter/Armor_Head_Drifter</Item>
     </Event>
-    <Event name="Driftstone">
-      <Item dlc="Subject 2923" notes="Random drop on Reisum">/Items/Trinkets/DriftStone</Item>
+    <Event name="Driftstone" altname="漂流石">
+      <Item altname="漂流石" dlc="Subject 2923" notes="Random drop on Reisum">/Items/Trinkets/DriftStone</Item>
     </Event>
-    <Event name="EzlansBand">
-      <Item>/Items/Trinkets/Trinket_EzlansBand</Item>
+    <Event name="EzlansBand" altname="艾兹兰的指环">
+      <Item altname="艾兹兰的指环">/Items/Trinkets/Trinket_EzlansBand</Item>
     </Event>
-    <Event name="Fatty" altname="TheUncleanOne">
-      <Item>/Items/Weapons/Boss/Devastator/Weapon_Swamp_Devastator</Item>
-      <Item dlc="Swamps of Corsus">/Items/Weapons/Boss/ButchersFlail/Weapon_Swamp_ButchersFlail</Item>
-      <Item>/Items/Traits/Trait_Glutton</Item>
-      <Item>/Player/Emotes/Emote_Exhausted</Item>
+    <Event name="Fatty" altname="不洁者">
+      <Item altname="毁灭者">/Items/Weapons/Boss/Devastator/Weapon_Swamp_Devastator</Item>
+      <Item altname="屠夫流星锤" dlc="Swamps of Corsus">/Items/Weapons/Boss/ButchersFlail/Weapon_Swamp_ButchersFlail</Item>
+      <Item altname="饕餮">/Items/Traits/Trait_Glutton</Item>
+      <Item altname="疲惫">/Player/Emotes/Emote_Exhausted</Item>
     </Event>
-    <Event name="FetidPool">
-      <Item>/Items/Trinkets/Trinket_RustedAmulet</Item>
-      <Item>/Items/Trinkets/HeartOfDarkness</Item>
-      <Item>/Items/Trinkets/HerosRing</Item>
-      <Item>/Items/Traits/Trait_Fortification</Item>
+    <Event name="FetidPool" altname="灵偶之池">
+      <Item altname="锈蚀项链">/Items/Trinkets/Trinket_RustedAmulet</Item>
+      <Item altname="黑暗之心">/Items/Trinkets/HeartOfDarkness</Item>
+      <Item altname="英雄戒指">/Items/Trinkets/HerosRing</Item>
+      <Item altname="加固">/Items/Traits/Trait_Fortification</Item>
     </Event>
-    <Event name="FiveFingeredRing">
-      <Item dlc="Subject 2923" notes="Random drop on rural Earth">/Items/Trinkets/FiveFingeredRing</Item>
+    <Event name="FiveFingeredRing" altname="五指戒指">
+      <Item altname="五指戒指" dlc="Subject 2923" notes="Random drop on rural Earth">/Items/Trinkets/FiveFingeredRing</Item>
     </Event>
-    <Event name="Flautist">
-      <Item>/Items/Trinkets/Trinket_HeartOfTheWolf</Item>
-      <Item>/Items/Traits/Trait_Swiftness</Item>
+    <Event name="Flautist" altname="长笛手">
+      <Item altname="狼之心">/Items/Trinkets/Trinket_HeartOfTheWolf</Item>
+      <Item altname="迅敏">/Items/Traits/Trait_Swiftness</Item>
     </Event>
-    <Event name="FlickeringHorror" altname="DreamEater">
-      <Item>/Items/Mods/RiftWalker</Item>
+    <Event name="FlickeringHorror" altname="噬梦魔">
+      <Item altname="裂隙行者">/Items/Mods/RiftWalker</Item>
     </Event>
-    <Event name="FoundersHideout">
-      <Item>/Items/Armor/Drifter/Armor_Body_Drifter</Item>
-      <Item>/Items/Armor/Drifter/Armor_Legs_Drifter</Item>
+    <Event name="FoundersHideout" altname="创始人藏身处">
+      <Item altname="流浪者大衣">/Items/Armor/Drifter/Armor_Body_Drifter</Item>
+      <Item altname="流浪者裤子">/Items/Armor/Drifter/Armor_Legs_Drifter</Item>
     </Event>
-    <Event name="FrozenLords">
-      <Item dlc="Subject 2923">/Items/Armor/Scavenger/Armor_Head_Scavenger</Item>
-      <Item dlc="Subject 2923">/Items/Armor/Scavenger/Armor_Body_Scavenger</Item>
-      <Item dlc="Subject 2923">/Items/Armor/Scavenger/Armor_Legs_Scavenger</Item>
+    <Event name="FrozenLords" altname="玛吉尔的测试">
+      <Item altname="拾荒者头盔" dlc="Subject 2923">/Items/Armor/Scavenger/Armor_Head_Scavenger</Item>
+      <Item altname="拾荒者护甲" dlc="Subject 2923">/Items/Armor/Scavenger/Armor_Body_Scavenger</Item>
+      <Item altname="拾荒者靴子" dlc="Subject 2923">/Items/Armor/Scavenger/Armor_Legs_Scavenger</Item>
     </Event>
-    <Event name="GalenicCharm">
-      <Item>/Items/Trinkets/Trinket_GalenicCharm</Item>
+    <Event name="GalenicCharm" altname="医疗神符">
+      <Item altname="医疗神符">/Items/Trinkets/Trinket_GalenicCharm</Item>
     </Event>
-    <Event name="GraveyardElf">
-      <Item>/Items/Trinkets/GrimCoil</Item>
-      <Item>/Items/Trinkets/Trinket_RingOfTheUnclean</Item>
-      <Item>/Items/Traits/Trait_Potency</Item>
+    <Event name="GraveyardElf" altname="沼泽墓园">
+      <Item altname="冷酷线圈">/Items/Trinkets/GrimCoil</Item>
+      <Item altname="不洁者戒指">/Items/Trinkets/Trinket_RingOfTheUnclean</Item>
+      <Item altname="效能">/Items/Traits/Trait_Potency</Item>
     </Event>
-    <Event name="GravityStone">
-      <Item>/Items/Trinkets/GravityStone</Item>
+    <Event name="GravityStone" altname="迅敏之石">
+      <Item altname="迅敏之石">/Items/Trinkets/GravityStone</Item>
     </Event>
-    <Event name="Guardian">
+    <Event name="Guardian" altname="保护守护生物">
       <!--Item dlc="Subject 2923">/Items/Trinkets/Trinket_GunslingersCharm</Item-->
     </Event>
     <Event name="GunslingersCharm" altname="枪手神符">
-      <Item altname="枪手神符">/Items/Trinkets/GunslingersCharm</Item>
+      <Item altname="枪手神符">/Items/Trinkets/Trinket_GunslingersCharm</Item>
     </Event>
     <Event name="GunslignersRing" altname="枪手戒指">
       <Item altname="枪手戒指">/Items/Trinkets/Trinket_GunslingersRing</Item>
@@ -261,59 +265,59 @@
     <Event name="HeartSeeker" altname="追心者">
       <Item altname="追心者">/Items/Trinkets/HeartSeeker</Item>
     </Event>
-    <Event name="Homestead">
-      <Item dlc="Subject 2923">/Items/Trinkets/VanguardRing</Item>
+    <Event name="Homestead" altname="农庄">
+      <Item altname="前锋戒指" dlc="Subject 2923">/Items/Trinkets/VanguardRing</Item>
     </Event>
-    <Event name="HoundMaster">
-      <Item>/Items/Mods/HowlersImmunity</Item>
+    <Event name="HoundMaster" altname="猎犬之主">
+      <Item altname="嚎叫怪的免疫力">/Items/Mods/HowlersImmunity</Item>
     </Event>
-    <Event name="HuntersBand">
-      <Item>/Items/Trinkets/HuntersBand</Item>
+    <Event name="HuntersBand" altname="猎人指环">
+      <Item altname="猎人指环">/Items/Trinkets/HuntersBand</Item>
     </Event>
-    <Event name="HuntersHalo">
-      <Item>/Items/Trinkets/Trinket_HuntersHalo</Item>
+    <Event name="HuntersHalo" altname="猎人光晕">
+      <Item altname="猎人光晕">/Items/Trinkets/Trinket_HuntersHalo</Item>
     </Event>
     <Event name="HuntersHideout" altname="猎人老窝">
-      <Item>/Items/Weapons/Basic/HandGuns/HuntingPistol/Weapon_HuntingPistol</Item>
-      <Item>/Items/Traits/Trait_ShadowWalker</Item>
+      <Item altname="狩猎手枪">/Items/Weapons/Basic/HandGuns/HuntingPistol/Weapon_HuntingPistol</Item>
+      <Item altname="暗影行者">/Items/Traits/Trait_ShadowWalker</Item>
     </Event>
-    <Event name="IceSkimmer">
-      <Item dlc="Subject 2923">/Items/Trinkets/BandOfDiscord</Item>
-      <Item dlc="Subject 2923">/Items/Trinkets/RingOfSynergy</Item>
-      <Item dlc="Subject 2923">/Items/Weapons/Basic/SawedOffShotgun/Weapon_SawedOffShotgun</Item>
-      <Item dlc="Subject 2923">/Items/Armor/Warlord/Armor_Head_Warlord</Item>
-      <Item dlc="Subject 2923">/Items/Armor/Warlord/Armor_Body_Warlord</Item>
-      <Item dlc="Subject 2923">/Items/Armor/Warlord/Armor_Legs_Warlord</Item>
+    <Event name="IceSkimmer" altname="瑟姆（双头鼠）">
+      <Item altname="祸根指环" dlc="Subject 2923">/Items/Trinkets/BandOfDiscord</Item>
+      <Item altname="协同戒指" dlc="Subject 2923">/Items/Trinkets/RingOfSynergy</Item>
+      <Item altname="短管霰弹枪" dlc="Subject 2923">/Items/Weapons/Basic/SawedOffShotgun/Weapon_SawedOffShotgun</Item>
+      <Item altname="将军颅骨" dlc="Subject 2923">/Items/Armor/Warlord/Armor_Head_Warlord</Item>
+      <Item altname="将军护甲" dlc="Subject 2923">/Items/Armor/Warlord/Armor_Body_Warlord</Item>
+      <Item altname="将军靴子" dlc="Subject 2923">/Items/Armor/Warlord/Armor_Legs_Warlord</Item>
     </Event>
-    <Event name="ImmolatorAndZephyr" altname="ScaldAndSear">
-      <Item>/Items/Mods/WildfireShot</Item>
+    <Event name="ImmolatorAndZephyr" altname="烫伤和烧灼">
+      <Item altname="野火射击">/Items/Mods/WildfireShot</Item>
     </Event>
-    <Event name="IskalQueen">
-      <Item>/Items/Weapons/Basic/Melee/Weapon_Swamp_Scythe</Item>
-      <Item>/Items/Weapons/Basic/LongGuns/Crossbow/Weapon_Swamp_Crossbow</Item>
-      <Item>/Items/Armor/Slayer/Armor_Head_Slayer</Item>
-      <Item>/Items/Armor/Slayer/Armor_Body_Slayer</Item>
-      <Item>/Items/Armor/Slayer/Armor_Legs_Slayer</Item>
+    <Event name="IskalQueen" altname="伊斯卡尔女王">
+      <Item altname="镰刀">/Items/Weapons/Basic/Melee/Weapon_Swamp_Scythe</Item>
+      <Item altname="弩">/Items/Weapons/Basic/LongGuns/Crossbow/Weapon_Swamp_Crossbow</Item>
+      <Item altname="屠杀者面具">/Items/Armor/Slayer/Armor_Head_Slayer</Item>
+      <Item altname="屠杀者斗篷">/Items/Armor/Slayer/Armor_Body_Slayer</Item>
+      <Item altname="屠杀者靴子">/Items/Armor/Slayer/Armor_Legs_Slayer</Item>
     </Event>
-    <Event name="JanitorsWatch">
-      <Item dlc="Subject 2923" notes="Give Janitor's Watch to Clementine">/Items/Trinkets/AmberMoonstone</Item>
+    <Event name="JanitorsWatch" altname="清洁工的表">
+      <Item altname="琥珀月光石" dlc="Subject 2923" notes="Give Janitor's Watch to Clementine">/Items/Trinkets/AmberMoonstone</Item>
     </Event>
-    <Event name="KeepersRing">
-      <Item>/Items/Trinkets/Trinket_KeepersRing</Item>
+    <Event name="KeepersRing" altname="守卫的戒指">
+      <Item altname="守卫的戒指">/Items/Trinkets/Trinket_KeepersRing</Item>
     </Event>
-    <Event name="KinCaller" altname="Warden">
-      <Item>/Items/Mods/SongOfSwords</Item>
+    <Event name="KinCaller" altname="典狱长">
+      <Item altname="万剑歌雨">/Items/Mods/SongOfSwords</Item>
     </Event>
-    <Event name="KrallBaby">
-      <Item dlc="Subject 2923">/Items/Traits/Trait_Siphoner</Item>
-      <Item dlc="Subject 2923" notes="Speak to mother at Chillwind Hovel, then free Krall Baby">/Items/Trinkets/BlessedNecklace</Item>
+    <Event name="KrallBaby" altname="克罗尔婴儿">
+      <Item altname="虹吸者" dlc="Subject 2923">/Items/Traits/Trait_Siphoner</Item>
+      <Item altname="祝福项链" dlc="Subject 2923" notes="Free Krall Baby then speak to mother at Chillwind Hovel">/Items/Trinkets/BlessedNecklace</Item>
     </Event>
     <Event name="LastWill" altname="补给任务">
       <Item altname="突击步枪">/Items/Weapons/Basic/LongGuns/AssaultRifle/Weapon_AssaultRifle</Item>
       <Item altname="精神">/Items/Traits/Trait_Spirit</Item>
     </Event>
-    <Event name="LeechEmber">
-      <Item>/Items/Trinkets/Trinket_LeechEmber</Item>
+    <Event name="LeechEmber" altname="水蛭余烬">
+      <Item altname="水蛭余烬">/Items/Trinkets/Trinket_LeechEmber</Item>
     </Event>
     <Event name="LizAndLiz" altname="双薇战记">
       <Item altname="芝加哥打字机">/Items/Weapons/Basic/LongGuns/MachineGun/Weapon_Machinegun</Item>
@@ -322,75 +326,75 @@
     <Event name="MadMerchant" altname="疯狂商人">
       <Item altname="扭曲面具">/Items/QuestItems/TwistedMask/Quest_TwistedMask</Item>
     </Event>
-    <Event name="Monolith">
-      <Item dlc="Swamps of Corsus">/Items/Armor/Void/Armor_Head_Void</Item>
-      <Item dlc="Swamps of Corsus">/Items/Armor/Void/Armor_Body_Void</Item>
-      <Item dlc="Swamps of Corsus">/Items/Armor/Void/Armor_Legs_Void</Item>
+    <Event name="Monolith" altname="巨石碑">
+      <Item altname="虚空头颅" dlc="Swamps of Corsus">/Items/Armor/Void/Armor_Head_Void</Item>
+      <Item altname="虚空甲壳" dlc="Swamps of Corsus">/Items/Armor/Void/Armor_Body_Void</Item>
+      <Item altname="虚空腿甲" dlc="Swamps of Corsus">/Items/Armor/Void/Armor_Legs_Void</Item>
     </Event>
     <Event name="MothersRing" altname="母亲的戒指">
-      <Item>/Items/Trinkets/Trinket_母亲的戒指</Item>
+      <Item altname="母亲的戒指">/Items/Trinkets/Trinket_MothersRing</Item>
     </Event>
     <Event name="MudTooth" altname="泥牙的藏身处">
-      <Item>/Quests/Quest_OverworldPOI_MudTooth/Quest_BrabusPocketWatch</Item>
+      <Item altname="怀表">/Quests/Quest_OverworldPOI_MudTooth/Quest_BrabusPocketWatch</Item>
     </Event>
     <Event name="Nexus" altname="藤蔓中枢"></Event>
-    <Event name="OldManAndConstruct" altname="WudAndAncientConstruct">
-      <Item>/Items/Trinkets/JewelOfTheBlackSun</Item>
-      <Item>/Items/Trinkets/MendersCharm</Item>
-      <Item>/Items/Armor/Osseous/Armor_Head_Osseous</Item>
-      <Item>/Items/Armor/Osseous/Armor_Body_Osseous</Item>
-      <Item>/Items/Armor/Osseous/Armor_Legs_Osseous</Item>
-      <Item>/Items/Mods/IronSentinel</Item>
-      <Item notes="Pet Wud's dog on Rhom">/Items/Mods/VeryGoodBoy</Item>
+    <Event name="OldManAndConstruct" altname="伍德和古代构造物">
+      <Item altname="黑日珠宝">/Items/Trinkets/JewelOfTheBlackSun</Item>
+      <Item altname="治疗者神符">/Items/Trinkets/MendersCharm</Item>
+      <Item altname="骨质头盔">/Items/Armor/Osseous/Armor_Head_Osseous</Item>
+      <Item altname="骨质外壳">/Items/Armor/Osseous/Armor_Body_Osseous</Item>
+      <Item altname="骨质短裙">/Items/Armor/Osseous/Armor_Legs_Osseous</Item>
+      <Item altname="钢铁哨兵">/Items/Mods/IronSentinel</Item>
+      <Item altname="好孩子" notes="Pet Wud's dog on Rhom">/Items/Mods/VeryGoodBoy</Item>
     </Event>
-    <Event name="PearlOfLuminescence">
-      <Item>/Items/Trinkets/Trinket_PearlOfLuminescence</Item>
+    <Event name="PearlOfLuminescence" altname="荧光珍珠">
+      <Item altname="荧光珍珠">/Items/Trinkets/Trinket_PearlOfLuminescence</Item>
     </Event>
-    <Event name="Penitent" altname="莱托护符">
-      <Item>/Items/Trinkets/Trinket_LetosAmulet</Item>
+    <Event name="Penitent" altname="莱托的项链">
+      <Item altname="莱托的项链">/Items/Trinkets/Trinket_LetosAmulet</Item>
     </Event>
     <Event name="PillarOfStone" altname="石之砥柱">
       <Item altname="石之砥柱">/Items/Trinkets/Trinket_PillarOfStone</Item>
     </Event>
-    <Event name="PolishedWhetstone">
-      <Item dlc="Subject 2923" notes="Random drop on Reisum">/Items/Trinkets/PolishedWhetstone</Item>
+    <Event name="PolishedWhetstone" altname="发光的磨刀石">
+      <Item altname="发光的磨刀石" dlc="Subject 2923" notes="Random drop on Reisum">/Items/Trinkets/PolishedWhetstone</Item>
     </Event>
-    <Event name="QueensTemple">
-      <Item dlc="Swamps of Corsus">/Items/Weapons/Boss/PrideOfTheIskal/Weapon_Swamp_PrideOfTheIskal</Item>
-      <Item>/Items/Traits/Trait_Footwork</Item>
-      <Item>/Items/Mods/Seeker</Item>
+    <Event name="QueensTemple" altname="伊斯卡尔神庙">
+      <Item dlc="Swamps of Corsus" altname="伊斯卡尔之骄傲">/Items/Weapons/Boss/PrideOfTheIskal/Weapon_Swamp_PrideOfTheIskal</Item>
+      <Item altname="步法">/Items/Traits/Trait_Footwork</Item>
+      <Item altname="追寻者">/Items/Mods/Seeker</Item>
     </Event>
-    <Event name="RadioactiveEmber">
-      <Item notes="Random drop on Rhom">/Items/Trinkets/RadioactiveEmber</Item>
+    <Event name="RadioactiveEmber" altname="放射性余烬">
+      <Item altname="放射性余烬" notes="Random drop on Rhom">/Items/Trinkets/RadioactiveEmber</Item>
     </Event>
-    <Event name="RatRider" altname="RargrAndBrudvaak">
-      <Item dlc="Subject 2923">/Items/Traits/Trait_HardCharger</Item>
-      <Item dlc="Subject 2923">/Items/Weapons/Boss/Alternator/Weapon_Snow_Alternator</Item>
-      <Item dlc="Subject 2923">/Items/Weapons/Boss/ChainBlade/Weapon_Snow_ChainBlade</Item>
+    <Event name="RatRider" altname="瓦尔基尔和布鲁德瓦克">
+      <Item altname="强硬冲刺" dlc="Subject 2923">/Items/Traits/Trait_HardCharger</Item>
+      <Item altname="交替者" dlc="Subject 2923">/Items/Weapons/Boss/Alternator/Weapon_Snow_Alternator</Item>
+      <Item altname="链锯" dlc="Subject 2923">/Items/Weapons/Boss/ChainBlade/Weapon_Snow_ChainBlade</Item>
     </Event>
-    <Event name="RazorStone">
-      <Item>/Items/Trinkets/Razorstone</Item>
+    <Event name="RazorStone" altname="剃刀之石">
+      <Item altname="剃刀之石">/Items/Trinkets/Razorstone</Item>
     </Event>
-    <Event name="RazorwireNecklace">
-      <Item dlc="Subject 2923" notes="Random drop on Reisum">/Items/Trinkets/RazorwireNecklace</Item>
+    <Event name="RazorwireNecklace" altname="铁网项链">
+      <Item altname="铁网项链" dlc="Subject 2923" notes="Random drop on Reisum">/Items/Trinkets/RazorwireNecklace</Item>
     </Event>
     <Event name="ReggiesRing" altname="污秽戒指">
       <Item altname="拾荒者">/Items/Traits/Trait_Scavenger</Item>
     </Event>
-    <Event name="RestrictionCord">
-      <Item notes="Random drop on Yaesha">/Items/Trinkets/RestrictionCord</Item>
+    <Event name="RestrictionCord" altname="约束带">
+      <Item altname="约束带" notes="Random drop on Yaesha">/Items/Trinkets/RestrictionCord</Item>
     </Event>
-    <Event name="RingOfElusion">
-      <Item>/Items/Trinkets/RingOfElusion</Item>
+    <Event name="RingOfElusion" altname="逃避戒指">
+      <Item altname="逃避戒指">/Items/Trinkets/RingOfElusion</Item>
     </Event>
     <Event name="RingOfEvasion" altname="闪避戒指">
       <Item altname="闪避戒指">/Items/Trinkets/Trinket_RingOfEvasion</Item>
     </Event>
-    <Event name="RockOfAnguish">
-      <Item>/Items/Trinkets/RockOfAnguish</Item>
+    <Event name="RockOfAnguish" altname="痛苦之岩">
+      <Item altname="痛苦之岩">/Items/Trinkets/RockOfAnguish</Item>
     </Event>
-    <Event name="RingOfShadows">
-      <Item>/Items/Trinkets/Trinket_RingOfShadows</Item>
+    <Event name="RingOfShadows" altname="暗影戒指">
+      <Item altname="暗影戒指">/Items/Trinkets/Trinket_RingOfShadows</Item>
     </Event>
     <Event name="RootBrute" altname="血腥铁拳">
       <Item altname="尖刺斗篷">/Items/Mods/MantleOfThorns</Item>
@@ -404,9 +408,9 @@
       <Item altname="阴燃">/Items/Weapons/Boss/Root_Smolder/Weapon_Root_Smolder</Item>
       <Item altname="召唤">/Player/Emotes/Emote_Beckon</Item>
     </Event>
-    <Event name="RootMother">
-      <Item>/Items/Traits/Trait_MothersBlessing</Item>
-      <Item>/Items/Weapons/Basic/LongGuns/SniperRifle/Weapon_SniperRifle</Item>
+    <Event name="RootMother" altname="根蔓之母">
+      <Item altname="母亲的祝福">/Items/Traits/Trait_MothersBlessing</Item>
+      <Item altname="狙击步枪">/Items/Weapons/Basic/LongGuns/SniperRifle/Weapon_SniperRifle</Item>
     </Event>
     <Event name="RootTumbleweed" altname="割碎者">
       <Item altname="播种者">/Items/Mods/SeedCaller</Item>
@@ -425,48 +429,48 @@
       <Item altname="扭曲牢笼">/Items/Armor/Twisted/Armor_Body_Twisted</Item>
       <Item altname="扭曲腿甲">/Items/Armor/Twisted/Armor_Legs_Twisted</Item>
     </Event>
-    <Event name="Ruins">
+    <Event name="Ruins" altname="遗迹">
     </Event>
     <Event name="SageStone" altname="贤者之石">
       <Item altname="贤者之石">/Items/Trinkets/Trinket_Sagestone</Item>
     </Event>
-    <Event name="Sentinel" altname="Raze">
-      <Item>/Items/Mods/Beckon</Item>
+    <Event name="Sentinel" altname="夷平">
+      <Item altname="召唤">/Items/Mods/Beckon</Item>
     </Event>
-    <Event name="SerpentsFang">
-      <Item dlc="Subject 2923" notes="Random drop on Reisum">/Items/Trinkets/SerpentsFang</Item>
+    <Event name="SerpentsFang" altname="毒蛇之牙">
+      <Item altname="毒蛇之牙" dlc="Subject 2923" notes="Random drop on Reisum">/Items/Trinkets/SerpentsFang</Item>
     </Event>
     <Event name="Settlement" altname="聚居地">
     </Event>
-    <Event name="ShamanFlames">
-      <Item dlc="Subject 2923">/Items/Trinkets/Trinket_PrismaticDiamondRing</Item>
+    <Event name="ShamanFlames" altname="萨满烈焰">
+      <Item altname="棱钻戒指" dlc="Subject 2923">/Items/Trinkets/Trinket_PrismaticDiamondRing</Item>
     </Event>
-    <Event name="ShieldWarden" altname="ObrykTheShieldWarden">
-      <Item dlc="Subject 2923">/Items/Mods/FrozenMist</Item>
+    <Event name="ShieldWarden" altname="奥布里克，盾卫者">
+      <Item altname="冰封迷雾" dlc="Subject 2923">/Items/Mods/FrozenMist</Item>
     </Event>
-    <Event name="Sketterling">
-      <Item>/Items/Armor/Carapace/Armor_Head_Carapace</Item>
-      <Item>/Items/Armor/Carapace/Armor_Body_Carapace</Item>
-      <Item>/Items/Armor/Carapace/Armor_Legs_Carapace</Item>
-      <Item>/Items/Trinkets/Trinket_IskalHunterBand</Item>
-      <Item>/Items/Trinkets/AmuletOfEpicaricacy</Item>
-      <Item>/Items/Trinkets/RingOfTheMantis</Item>
+    <Event name="Sketterling" altname="圣甲虫">
+      <Item altname="甲壳巨盔">/Items/Armor/Carapace/Armor_Head_Carapace</Item>
+      <Item altname="甲壳">/Items/Armor/Carapace/Armor_Body_Carapace</Item>
+      <Item altname="甲壳腿甲">/Items/Armor/Carapace/Armor_Legs_Carapace</Item>
+      <Item altname="伊斯卡尔猎人指环">/Items/Trinkets/Trinket_IskalHunterBand</Item>
+      <Item altname="乐祸项链">/Items/Trinkets/AmuletOfEpicaricacy</Item>
+      <Item altname="螳螂戒指">/Items/Trinkets/RingOfTheMantis</Item>
     </Event>
-    <Event name="SlaveRevolt">
-      <Item>/Items/Traits/Trait_Triage</Item>
+    <Event name="SlaveRevolt" altname="与叛军战斗">
+      <Item altname="战场急救">/Items/Traits/Trait_Triage</Item>
     </Event>
-    <Event name="SlimeHulk" altname="Canker">
-      <Item>/Items/Mods/CorrosiveAura</Item>
-      <Item>/Items/Traits/Trait_Catalyst</Item>
+    <Event name="SlimeHulk" altname="溃疡">
+      <Item altname="腐蚀光环">/Items/Mods/CorrosiveAura</Item>
+      <Item altname="催化剂">/Items/Traits/Trait_Catalyst</Item>
     </Event>
-    <Event name="SnowRuins" altname="TheSilentSnow">
+    <Event name="SnowRuins" altname="落雪无声">
       <!--Item dlc="Subject 2923"></Item-->
     </Event>
-    <Event name="SoulLink">
-      <Item>/Items/Trinkets/SoulLink</Item>
+    <Event name="SoulLink" altname="灵魂连接">
+      <Item altname="灵魂连接">/Items/Trinkets/SoulLink</Item>
     </Event>
-    <Event name="SpiritStone">
-      <Item notes="Random drop on Yaesha">/Items/Trinkets/Trinket_SpiritStone</Item>
+    <Event name="SpiritStone" altname="精神之石">
+      <Item altname="精神之石" notes="Random drop on Yaesha">/Items/Trinkets/Trinket_SpiritStone</Item>
     </Event>
     <Event name="Splitter" altname="扒皮者">
       <Item altname="莱托的头盔">/Items/Armor/Leto/Armor_Head_Leto</Item>
@@ -474,203 +478,202 @@
       <Item altname="莱托的绑腿">/Items/Armor/Leto/Armor_Legs_Leto</Item>
       <Item altname="闪烁披风">/Items/Mods/FlickerCloak</Item>
     </Event>
-    <Event name="StalkersBrand">
-      <Item notes="Random drop on Yaesha">/Items/Trinkets/Trinket_StalkersBrand</Item>
+    <Event name="StalkersBrand" altname="潜行者印记">
+      <Item altname="潜行者印记" notes="Random drop on Yaesha">/Items/Trinkets/Trinket_StalkersBrand</Item>
     </Event>
     <Event name="StockpileCirclet" altname="储备饰环">
       <Item altname="储备饰环">/Items/Trinkets/Trinket_StockpileCirclet</Item>
     </Event>
-    <Event name="StoneOfBalance">
-      <Item>/Items/Trinkets/Trinket_StoneOfBalance</Item>
+    <Event name="StoneOfBalance" altname="平衡之石">
+      <Item altname="平衡之石">/Items/Trinkets/Trinket_StoneOfBalance</Item>
     </Event>
-    <Event name="StormAmulet">
-      <Item>/Items/Trinkets/Trinket_StormAmulet</Item>
+    <Event name="StormAmulet" altname="风暴项链">
+      <Item altname="风暴项链">/Items/Trinkets/Trinket_StormAmulet</Item>
     </Event>
-    <Event name="StormCaller" altname="Stormcaller">
-      <Item>/Items/Mods/StormCaller</Item>
+    <Event name="StormCaller" altname="风暴召唤者">
+      <Item altname="风暴召唤者">/Items/Mods/StormCaller</Item>
     </Event>
-    <Event name="StuckMerchant">
-      <Item>/Items/Weapons/Basic/Spear/Weapon_Pan_Spear</Item>
-      <Item>/Items/Armor/Radiant/Armor_Legs_Radiant</Item>
-      <Item>/Items/Armor/Radiant/Armor_Body_Radiant</Item>
-      <Item>/Items/Armor/Radiant/Armor_Head_Radiant</Item>
-      <Item>/Items/Trinkets/Trinket_GuardiansRing</Item>
-      <Item>/Items/Traits/Trait_GuardiansBlessing</Item>
+    <Event name="StuckMerchant" altname="遇难商人">
+      <Item altname="长矛">/Items/Weapons/Basic/Spear/Weapon_Pan_Spear</Item>
+      <Item altname="光耀腿甲">/Items/Armor/Radiant/Armor_Legs_Radiant</Item>
+      <Item altname="光耀保护者">/Items/Armor/Radiant/Armor_Body_Radiant</Item>
+      <Item altname="光耀面容">/Items/Armor/Radiant/Armor_Head_Radiant</Item>
+      <Item altname="守护生物戒指">/Items/Trinkets/Trinket_GuardiansRing</Item>
+      <Item altname="守护生物的祝福">/Items/Traits/Trait_GuardiansBlessing</Item>
     </Event>
-    <Event name="SwampGuardian" altname="Ixillis">
-      <Item>/Items/Weapons/Boss/HiveCannon/Weapon_Swamp_HiveCannon</Item>
-      <Item>/Items/Weapons/Boss/GuardianAxe/Weapon_Swamp_GuardianAxe</Item>
-      <Item>/Items/Traits/Trait_Executioner</Item>
-      <Item>/Player/Emotes/Emote_Confused</Item>
+    <Event name="SwampGuardian" altname="伊克希利斯">
+      <Item altname="虫巢炮">/Items/Weapons/Boss/HiveCannon/Weapon_Swamp_HiveCannon</Item>
+      <Item altname="守护生物之斧">/Items/Weapons/Boss/GuardianAxe/Weapon_Swamp_GuardianAxe</Item>
+      <Item altname="行刑者">/Items/Traits/Trait_Executioner</Item>
+      <Item altname="困惑">/Player/Emotes/Emote_Confused</Item>
     </Event>
-    <Event name="SwarmMaster" altname="Scourge">
-      <Item>/Items/Mods/BreathOfDesert</Item>
+    <Event name="SwarmMaster" altname="天灾">
+      <Item altname="沙漠气息">/Items/Mods/BreathOfDesert</Item>
     </Event>
-    <Event name="TalismanOfAnimosity">
-      <Item>/Items/Trinkets/TalismanOfAnimosity</Item>
+    <Event name="TalismanOfAnimosity" altname="敌意护符">
+      <Item altname="敌意护符">/Items/Trinkets/TalismanOfAnimosity</Item>
     </Event>
-    <Event name="TalismanOfPerseverance">
-      <Item>/Items/Trinkets/TalismanOfPerseverance</Item>
+    <Event name="TalismanOfPerseverance" altname="不懈护符">
+      <Item notes="According to devs, can also be a random drop on Yaesha (unconfirmed)" altname="不懈护符">/Items/Trinkets/TalismanOfPerseverance</Item>
     </Event>
-    <Event name="TerrorMargin">
-      <Item dlc="Subject 2923" notes="Random drop on Rural Earth">/Items/Trinkets/TerrorMargin</Item>
+    <Event altname="恐惧边缘" name="TerrorMargin">
+      <Item altname="恐惧边缘" dlc="Subject 2923" notes="Random drop on Rural Earth">/Items/Trinkets/TerrorMargin</Item>
     </Event>
-    <Event name="TheCleanRoom">
-      <Item altname="Wastelander Flail">/Items/Weapons/Basic/Wasteland_Flail/Weapon_Wasteland_Flail</Item>
+    <Event name="TheCleanRoom" altname="无尘室">
+      <Item altname="荒原行者流星锤">/Items/Weapons/Basic/Wasteland_Flail/Weapon_Wasteland_Flail</Item>
     </Event>
-    <Event name="TheHarrow">
-      <Item>/Items/Weapons/Boss/Defiler/Weapon_Wasteland_Defiler</Item>
-      <Item>/Items/Weapons/Boss/LostHarpoon/Weapon_Wasteland_LostHarpoon</Item>
-      <Item>/Player/Emotes/Emote_Fail</Item>
+    <Event name="TheHarrow" altname="钉耙">
+      <Item altname="玷污者">/Items/Weapons/Boss/Defiler/Weapon_Wasteland_Defiler</Item>
+      <Item altname="失落鱼叉">/Items/Weapons/Boss/LostHarpoon/Weapon_Wasteland_LostHarpoon</Item>
+      <Item altname="失败">/Player/Emotes/Emote_Fail</Item>
     </Event>
-    <Event name="TheJackal" altname="ErforTheJackal">
-      <Item dlc="Subject 2923">/Items/Mods/ColdSpear</Item>
+    <Event name="TheJackal" altname="豺狼艾尔弗">
+      <Item altname="寒冷长矛" dlc="Subject 2923">/Items/Mods/ColdSpear</Item>
     </Event>
-    <Event name="TheLostGantry">
-      <Item>/Items/Weapons/Basic/Wasteland_BeamRifle/Weapon_Wasteland_BeamRifle</Item>
+    <Event name="TheLostGantry" altname="失落的铁架">
+      <Item altname="射线步枪">/Items/Weapons/Basic/Wasteland_BeamRifle/Weapon_Wasteland_BeamRifle</Item>
     </Event>
-    <Event name="TheRisen">
-      <Item>/Items/Trinkets/SoulAnchor</Item>
+    <Event name="TheRisen" altname="崛起者">
+      <Item altname="灵魂之锚">/Items/Trinkets/SoulAnchor</Item>
     </Event>
-    <Event name="TotemFather">
-      <Item>/Items/Traits/Trait_ArcaneStrike</Item>
-      <Item>/Items/Weapons/Boss/Pan_EyeOfTheStorm/Weapon_Pan_EyeOfTheStorm</Item>
-      <Item>/Items/Weapons/Boss/Pan_VoiceOfTheTempest/Weapon_Pan_VoiceOfTheTempest</Item>
-      <Item>/Player/Emotes/Emote_TeaTime</Item>
+    <Event name="TotemFather" altname="图腾之父">
+      <Item altname="奥术攻击">/Items/Traits/Trait_ArcaneStrike</Item>
+      <Item altname="风暴之眼">/Items/Weapons/Boss/Pan_EyeOfTheStorm/Weapon_Pan_EyeOfTheStorm</Item>
+      <Item altname="风暴之声">/Items/Weapons/Boss/Pan_VoiceOfTheTempest/Weapon_Pan_VoiceOfTheTempest</Item>
+      <Item altname="休息时间">/Player/Emotes/Emote_TeaTime</Item>
     </Event>
-    <Event name="Tyrant" altname="TheThrall">
-      <Item>/Items/Mods/Swarm</Item>
-      <Item>/Items/Traits/Trait_Catalyst</Item>
+    <Event name="Tyrant" altname="魔奴">
+      <Item altname="魔潮">/Items/Mods/Swarm</Item>
+      <Item altname="催化剂">/Items/Traits/Trait_Catalyst</Item>
     </Event>
-    <Event name="UndyingKing">
-      <Item>/Items/Weapons/Boss/Ruin/Weapon_Wasteland_Ruin</Item>
-      <Item>/Items/Traits/Trait_Kingslayer</Item>
-      <Item>/Items/Weapons/Boss/Riven/Weapon_Wasteland_Riven</Item>
-      <Item>/Player/Emotes/Emote_Gravedigger</Item>
+    <Event name="UndyingKing" altname="不灭之王">
+      <Item altname="废墟">/Items/Weapons/Boss/Ruin/Weapon_Wasteland_Ruin</Item>
+      <Item altname="弑君者">/Items/Traits/Trait_Kingslayer</Item>
+      <Item altname="劈裂者">/Items/Weapons/Boss/Riven/Weapon_Wasteland_Riven</Item>
+      <Item altname="掘墓者">/Player/Emotes/Emote_Gravedigger</Item>
     </Event>
-    <Event name="UrikkiBlademasters" altname="TianTheAssassin
-           ">
-      <Item dlc="Subject 2923">/Items/Mods/FanOfKnives</Item>
+    <Event name="UrikkiBlademasters" altname="刺客天">
+      <Item altname="飞刀散射" dlc="Subject 2923">/Items/Mods/FanOfKnives</Item>
     </Event>
-    <Event name="VargylBones">
-      <Item dlc="Subject 2923">/Items/Weapons/Boss/Frostborne/Weapon_Frostborne</Item>
+    <Event name="VargylBones" altname="费穆恩地洞">
+      <Item altname="霜裔" dlc="Subject 2923">/Items/Weapons/Boss/Frostborne/Weapon_Frostborne</Item>
     </Event>
-    <Event name="VengeanceIdol">
-      <Item>/Items/Trinkets/VengeanceIdol</Item>
+    <Event name="VengeanceIdol" altname="复仇神像">
+      <Item altname="复仇神像">/Items/Trinkets/VengeanceIdol</Item>
     </Event>
-    <Event name="Uncategorized">
-      <Item>/Items/Traits/Trait_Exploiter</Item>
-      <Item>/Items/Traits/Trait_Handling</Item>
-      <Item>/Items/Traits/Trait_KeepersBlessing</Item>
-      <Item>/Items/Traits/Trait_RapidStrike</Item>
-      <Item>/Items/Traits/Trait_Revivalist</Item>
-      <Item>/Items/Traits/Trait_SleightOfHand</Item>
-      <Item>/Items/Traits/Trait_Suspicion</Item>
-      <Item>/Items/Traits/Trait_Teamwork</Item>
-      <Item>/Items/Traits/Trait_TriggerHappy</Item>
-      <Item>/Items/Traits/Trait_WillToLive</Item>
-      <Item>/Items/Traits/Trait_WorldWalker</Item>
-      <Item>/Items/Traits/Trait_Invoker</Item>
-      <Item notes="Obtain 25 weapon mods">/Items/Traits/Trait_FlashCaster</Item>
-      <Item notes="Vault over 50 ledges">/Items/Traits/Trait_Climber</Item>
-      <Item notes="Deal 5,000 damage to armored points on enemies">/Items/Traits/Trait_ArmorPiercer</Item>
-      <Item notes="Get 100 kills using explosion damage">/Items/Traits/Trait_Demolitionist</Item>
-      <Item notes="Inflict 100 status effects on enemies">/Items/Traits/Trait_Tormentor</Item>
-      <Item notes="Cure 25 full status effects using consumables">/Items/Traits/Trait_Vaccine</Item>
-      <Item>/Player/Emotes/Emote_Wave</Item>
-      <Item mode="survival" notes="Reward for 5 consecutive boss kills">/Items/Armor/Adventurer/Armor_Head_Adventurer</Item>
-      <Item mode="survival" notes="Reward for 10 consecutive boss kills">/Items/Weapons/Human/Melee/Sword/Weapon_HerosSword</Item>
-      <Item mode="survival" notes="Reward for 25 total boss kills">/Items/Trinkets/Trinket_LoopOfProsperity</Item>
-      <Item mode="survival" notes="Reward for 50 total boss kills">/Items/Trinkets/TalismanOfPerseverance</Item>
-      <Item mode="survival" notes="Reward for 75 total boss kills">/Items/Trinkets/DaredevilsCharm</Item>
-      <Item mode="survival" notes="Reward for 100 total boss kills">/Items/Trinkets/BlackRose</Item>
-      <Item mode="survival" notes="Reward for defeating all minibosses twice(?)">/Items/Trinkets/BlackCatBand</Item>
-      <Item mode="survival" notes="Reward for defeating all world bosses twice(?)">/Items/Trinkets/BrightSteelRing</Item>
-      <Item mode="survival" notes="Reward for defeating all bosses an unknown number of times">/Items/Trinkets/WhiteRose</Item>
-      <Item mode="survival" notes="Purchase 100 items">/Items/Trinkets/RingOfFlawlessBeauty</Item>
-      <Item mode="hardcore" notes="Reward for defeating Clavinger/Harrow">/Items/Trinkets/AkariWarBand</Item>
-      <Item mode="hardcore" notes="Reward for defeating Ixillis">/Items/Trinkets/Trinket_EmpoweringLoop</Item>
-      <Item mode="hardcore" notes="Reward for defeating Singe/Ent">/Items/Trinkets/Trinket_ProvisionerRing</Item>
-      <Item mode="hardcore" notes="Reward for defeating Totem Father/Ravager" altname="Ring of Supremacy">/Items/Trinkets/RingOfSumpremacy</Item>
-      <Item mode="hardcore" notes="Reward for defeating Dreamer">/Items/Trinkets/Trinket_NightmareSpiral</Item>
-      <Item mode="hardcore" notes="Reward for defeating Dreamer">/Player/Emotes/Emote_HighFive</Item>
-      <Item mode="hardcore" notes="High five emote another player">/Items/Trinkets/Trinket_BandOfAccord</Item>
-      <Item mode="hardcore" notes="Reward for defeating Brudvaak and Vargr" dlc="Subject 2923">/Items/Trinkets/RingOfThePunisher</Item>
-      <Item mode="hardcore" notes="Reward for defeating Root Harbinger" dlc="Subject 2923">/Items/Trinkets/ShatteredVertebrae</Item>
-      <Item mode="hardcore" notes="Reward for completing both campaigns" dlc="Subject 2923">/Items/Trinkets/OnyxPendulum</Item>
+    <Event name="Uncategorized" altname="未分类">
+      <Item altname="剥削者" notes="Kill 150 enemies with Weak Spot Damage">/Items/Traits/Trait_Exploiter</Item>
+      <Item altname="操控性" notes="Can be acquired after obtaining 10 Weapons">/Items/Traits/Trait_Handling</Item>
+      <Item altname="守卫的祝福" notes="Obtained when you enter The Labyrinth for the first time">/Items/Traits/Trait_KeepersBlessing</Item>
+      <Item altname="快速攻击" notes="Can be obtained by leveling any non-boss melee weapon to level 20">/Items/Traits/Trait_RapidStrike</Item>
+      <Item altname="复活师" notes="Gain from reviving teammates 10 times">/Items/Traits/Trait_Revivalist</Item>
+      <Item altname="心灵手巧" notes="Have to get 100 Kills with 10 different Guns.100 Kills for each gun for a total of 1.000 kills">/Items/Traits/Trait_SleightOfHand</Item>
+      <Item altname="怀疑"  notes="Can be obtained by being downed 10 times by friendly fire">/Items/Traits/Trait_Suspicion</Item>
+      <Item altname="团队合作" notes="Join another player's game or have another player join your game">/Items/Traits/Trait_Teamwork</Item>
+      <Item altname="枪炮狂人" notes="Trait will be given after leveling up any ranged weapon to lvl 20">/Items/Traits/Trait_TriggerHappy</Item>
+      <Item altname="求生欲" notes="Can be obtained by being revived in multiplayer 10 times">/Items/Traits/Trait_WillToLive</Item>
+      <Item altname="世界行者" notes="Obtained when you first enter Rhom">/Items/Traits/Trait_WorldWalker</Item>
+      <Item altname="祈求者" notes="Acquired when summons have killed 100 enemies.Can be acquired without any DLC">/Items/Traits/Trait_Invoker</Item>
+      <Item altname="急速施法者" notes="Obtain 25 weapon mods">/Items/Traits/Trait_FlashCaster</Item>
+      <Item altname="攀登者" notes="Vault over 50 ledges">/Items/Traits/Trait_Climber</Item>
+      <Item altname="穿甲者" notes="Deal 5,000 damage to armored points on enemies">/Items/Traits/Trait_ArmorPiercer</Item>
+      <Item altname="爆破者" notes="Get 100 kills using explosion damage">/Items/Traits/Trait_Demolitionist</Item>
+      <Item altname="折磨者" notes="Inflict 100 status effects on enemies">/Items/Traits/Trait_Tormentor</Item>
+      <Item altname="疫苗" notes="Cure 25 full status effects using consumables">/Items/Traits/Trait_Vaccine</Item>
+      <Item altname="挥手">/Player/Emotes/Emote_Wave</Item>
+      <Item altname="守护者护目镜" mode="survival" notes="Reward for 5 consecutive boss kills">/Items/Armor/Adventurer/Armor_Head_Adventurer</Item>
+      <Item altname="英雄长剑" mode="survival" notes="Reward for 10 consecutive boss kills">/Items/Weapons/Human/Melee/Sword/Weapon_HerosSword</Item>
+      <Item altname="繁盛指环" mode="survival" notes="Reward for 25 total boss kills">/Items/Trinkets/Trinket_LoopOfProsperity</Item>
+      <Item altname="不懈护符" mode="survival" notes="Reward for 50 total boss kills">/Items/Trinkets/TalismanOfPerseverance</Item>
+      <Item altname="勇者神符" mode="survival" notes="Reward for 75 total boss kills">/Items/Trinkets/DaredevilsCharm</Item>
+      <Item altname="黑玫瑰" mode="survival" notes="Reward for 100 total boss kills">/Items/Trinkets/BlackRose</Item>
+      <Item altname="黑猫指环" mode="survival" notes="Help your friend kill 25 Bosses">/Items/Trinkets/BlackCatBand</Item>
+      <Item altname="亮钢戒指" mode="survival" notes="Reward for defeating all world bosses twice(?)">/Items/Trinkets/BrightSteelRing</Item>
+      <Item altname="白玫瑰" mode="survival" notes="Reward for defeating all bosses an unknown number of times">/Items/Trinkets/WhiteRose</Item>
+      <Item altname="无暇美丽戒指" mode="survival" notes="Purchase 100 items">/Items/Trinkets/RingOfFlawlessBeauty</Item>
+      <Item altname="阿卡里战争戒指" mode="hardcore" notes="Reward for defeating Clavinger/Harrow">/Items/Trinkets/AkariWarBand</Item>
+      <Item altname="加持之环" mode="hardcore" notes="Reward for defeating Ixillis">/Items/Trinkets/Trinket_EmpoweringLoop</Item>
+      <Item altname="供应者戒指" mode="hardcore" notes="Reward for defeating Singe/Ent">/Items/Trinkets/Trinket_ProvisionerRing</Item>
+      <Item altname="霸权戒指" mode="hardcore" notes="Reward for defeating Totem Father/Ravager">/Items/Trinkets/RingOfSumpremacy</Item>
+      <Item altname="噩梦螺旋" mode="hardcore" notes="Reward for defeating Dreamer">/Items/Trinkets/Trinket_NightmareSpiral</Item>
+      <Item altname="击掌" mode="hardcore" notes="Reward for defeating Dreamer">/Player/Emotes/Emote_HighFive</Item>
+      <Item altname="协调指环" mode="hardcore" notes="High five emote another player">/Items/Trinkets/Trinket_BandOfAccord</Item>
+      <Item altname="惩罚者戒指" mode="hardcore" notes="Reward for defeating Brudvaak and Vargr" dlc="Subject 2923">/Items/Trinkets/RingOfThePunisher</Item>
+      <Item altname="碎裂脊椎" mode="hardcore" notes="Reward for defeating Root Harbinger" dlc="Subject 2923">/Items/Trinkets/ShatteredVertebrae</Item>
+      <Item altname="玛瑙钟摆" mode="hardcore" notes="Reward for completing both campaigns" dlc="Subject 2923">/Items/Trinkets/OnyxPendulum</Item>
     </Event>
-    <Event name="VolatileGem">
-      <Item dlc="Subject 2923" notes="Random drop on Reisum">/Items/Trinkets/VolatileGem</Item>
+    <Event name="VolatileGem" altname="爆炸宝石">
+      <Item altname="爆炸宝石" dlc="Subject 2923" notes="Random drop on Reisum">/Items/Trinkets/VolatileGem</Item>
     </Event>
-    <Event name="Vyr" altname="ShadeAndShatter">
-      <Item>/Items/Mods/VeilOfTheBlackTear</Item>
+    <Event name="Vyr" altname="暗影和粉碎">
+      <Item altname="黑泪帐目">/Items/Mods/VeilOfTheBlackTear</Item>
     </Event>
     <Event name="WailingWood" altname="恸哭之林">
       <Item altname="扭曲神像">/Items/Trinkets/Trinket_TwistedIdol</Item>
       <Item altname="树皮">/Items/Traits/Trait_BarkSkin</Item>
     </Event>
     <Event name="Ward13">
-      <Item>/Items/Weapons/Basic/LongGuns/Coachgun/Weapon_Coachgun</Item>
-      <Item>/Items/Weapons/Human/Melee/Hatchet/Weapon_Hatchet</Item>
-      <Item>/Items/Armor/Cultist/Armor_Body_Cultist</Item>
-      <Item>/Items/Armor/Cultist/Armor_Head_Cultist</Item>
-      <Item>/Items/Armor/Cultist/Armor_Legs_Cultist</Item>
-      <Item>/Items/Weapons/Basic/LongGuns/HuntingRifle/Weapon_HuntingRifle</Item>
-      <Item>/Items/Weapons/Human/Melee/Sword/Weapon_Sword</Item>
-      <Item>/Items/Armor/Hunter/Armor_Body_Hunter</Item>
-      <Item>/Items/Armor/Hunter/Armor_Head_Hunter</Item>
-      <Item>/Items/Armor/Hunter/Armor_Legs_Hunter</Item>
-      <Item>/Items/Weapons/Basic/LongGuns/Shotgun/Weapon_Shotgun</Item>
-      <Item>/Items/Armor/Scrapper/Armor_Body_Scrapper</Item>
-      <Item>/Items/Armor/Scrapper/Armor_Head_Scrapper</Item>
-      <Item>/Items/Armor/Scrapper/Armor_Legs_Scrapper</Item>
-      <Item>/Items/Weapons/Human/Melee/Hammer/Weapon_Hammer</Item>
-      <Item>/Items/Traits/Trait_ElderKnowledge</Item>
-      <Item>/Items/Weapons/Basic/HandGuns/SubMachineGun/Weapon_Submachinegun</Item>
-      <Item>/Items/Trinkets/RingOfTheAdmiral</Item>
+      <Item altname="双管霰弹枪">/Items/Weapons/Basic/LongGuns/Coachgun/Weapon_Coachgun</Item>
+      <Item altname="废铁手斧">/Items/Weapons/Human/Melee/Hatchet/Weapon_Hatchet</Item>
+      <Item altname="教徒风衣">/Items/Armor/Cultist/Armor_Body_Cultist</Item>
+      <Item altname="教徒帽子">/Items/Armor/Cultist/Armor_Head_Cultist</Item>
+      <Item altname="教徒马裤">/Items/Armor/Cultist/Armor_Legs_Cultist</Item>
+      <Item altname="猎枪">/Items/Weapons/Basic/LongGuns/HuntingRifle/Weapon_HuntingRifle</Item>
+      <Item altname="废铁长剑">/Items/Weapons/Human/Melee/Sword/Weapon_Sword</Item>
+      <Item altname="猎人冲锋衣">/Items/Armor/Hunter/Armor_Body_Hunter</Item>
+      <Item altname="猎人兜帽">/Items/Armor/Hunter/Armor_Head_Hunter</Item>
+      <Item altname="猎人裤子">/Items/Armor/Hunter/Armor_Legs_Hunter</Item>
+      <Item altname="霰弹枪">/Items/Weapons/Basic/LongGuns/Shotgun/Weapon_Shotgun</Item>
+      <Item altname="拾荒匠胸甲">/Items/Armor/Scrapper/Armor_Body_Scrapper</Item>
+      <Item altname="拾荒匠头盔">/Items/Armor/Scrapper/Armor_Head_Scrapper</Item>
+      <Item altname="拾荒匠工作靴">/Items/Armor/Scrapper/Armor_Legs_Scrapper</Item>
+      <Item altname="废铁锤">/Items/Weapons/Human/Melee/Hammer/Weapon_Hammer</Item>
+      <Item altname="长老知识">/Items/Traits/Trait_ElderKnowledge</Item>
+      <Item altname="冲锋枪">/Items/Weapons/Basic/HandGuns/SubMachineGun/Weapon_Submachinegun</Item>
+      <Item altname="上将戒指">/Items/Trinkets/RingOfTheAdmiral</Item>
     </Event>
-    <Event name="Ward17">
-      <Item>/Items/Weapons/Boss/Guns/LongGuns/Repulsor/Weapon_Atoll_Repulsor</Item>
-      <Item>/Items/Traits/Trait_MindsEye</Item>
-      <Item>/Player/Emotes/Emote_PraiseTheGun</Item>
+    <Event name="Ward17" altname="17号实验室">
+      <Item altname="反击者">/Items/Weapons/Boss/Guns/LongGuns/Repulsor/Weapon_Atoll_Repulsor</Item>
+      <Item altname="心灵之眼">/Items/Traits/Trait_MindsEye</Item>
+      <Item altname="赞美枪械">/Player/Emotes/Emote_PraiseTheGun</Item>
     </Event>
-    <Event name="Ward17Root">
-      <Item dlc="Subject 2923">/Items/Weapons/Boss/FusionRifle/Weapon_Rural_FusionRifle</Item>
-      <Item dlc="Subject 2923">/Items/Weapons/Boss/WorldsEdge/Weapon_Rural_WorldsEdge</Item>
-      <Item dlc="Subject 2923">/Items/Traits/Trait_LastResort</Item>
+    <Event name="Ward17Root" altname="哈斯加德">
+      <Item altname="聚变步枪" dlc="Subject 2923">/Items/Weapons/Boss/FusionRifle/Weapon_Rural_FusionRifle</Item>
+      <Item altname="世界之刃" dlc="Subject 2923">/Items/Weapons/Boss/WorldsEdge/Weapon_Rural_WorldsEdge</Item>
+      <Item altname="最后手段" dlc="Subject 2923">/Items/Traits/Trait_LastResort</Item>
     </Event>
-    <Event name="WardPrime">
-      <Item dlc="Subject 2923">/Items/Weapons/Basic/MachinePistol/Weapon_MachinePistol</Item>
-      <Item dlc="Subject 2923">/Items/Trinkets/Trinket_RingOfHonor</Item>
-      <Item dlc="Subject 2923">/Items/Traits/Trait_Wisdom</Item>
+    <Event name="WardPrime" altname="主实验区">
+      <Item altname="自动手枪" dlc="Subject 2923">/Items/Weapons/Basic/MachinePistol/Weapon_MachinePistol</Item>
+      <Item altname="荣誉戒指" dlc="Subject 2923">/Items/Trinkets/Trinket_RingOfHonor</Item>
+      <Item altname="智慧" dlc="Subject 2923">/Items/Traits/Trait_Wisdom</Item>
     </Event>
-    <Event name="WarningTotems">
-      <Item dlc="Subject 2923">/Items/Trinkets/BloodlettersInsignia</Item>
-      <Item dlc="Subject 2923" note="Destroy some unactivated and some activated totems">/Items/Trinkets/JuggernautBand</Item>
-      <Item dlc="Subject 2923" note="Destroy all totems without activating them">/Items/Trinkets/Trinket_EvokersSeal</Item>
-      <Item dlc="Subject 2923" note="Destroy all totems after activating them">/Items/Trinkets/VulcansDetonator</Item>
+    <Event name="WarningTotems" altname="警示图腾">
+      <Item altname="放血者的徽记" dlc="Subject 2923">/Items/Trinkets/BloodlettersInsignia</Item>
+      <Item altname="主宰者指环" dlc="Subject 2923" notes="Destroy some unactivated and some activated totems">/Items/Trinkets/JuggernautBand</Item>
+      <Item altname="召唤师的封印" dlc="Subject 2923" notes="Destroy all totems without activating them">/Items/Trinkets/Trinket_EvokersSeal</Item>
+      <Item altname="火神的引爆器" dlc="Subject 2923" notes="Destroy all totems after activating them">/Items/Trinkets/VulcansDetonator</Item>
     </Event>
-    <Event name="Wisp" altname="CircletHatchery">
-      <Item>/Items/Trinkets/SoulEmber</Item>
-      <Item>/Items/Traits/Trait_Evocation</Item>
+    <Event name="Wisp" altname="环形孵化场">
+      <Item altname="灵魂余烬">/Items/Trinkets/SoulEmber</Item>
+      <Item altname="召唤">/Items/Traits/Trait_Evocation</Item>
     </Event>
-    <Event name="WastelandGuardian" altname="Claviger">
-      <Item>/Items/Weapons/Boss/WorldBreaker/Weapon_Wasteland_WorldBreaker</Item>
-      <Item>/Items/Weapons/Boss/ParticleAccelerator/Weapon_Wasteland_ParticleAccelerator</Item>
-      <Item>/Items/Traits/Trait_Recovery</Item>
-      <Item>/Player/Emotes/Emote_Laugh</Item>
+    <Event name="WastelandGuardian" altname="持钥者">
+      <Item altname="灭世">/Items/Weapons/Boss/WorldBreaker/Weapon_Wasteland_WorldBreaker</Item>
+      <Item altname="粒子加速器">/Items/Weapons/Boss/ParticleAccelerator/Weapon_Wasteland_ParticleAccelerator</Item>
+      <Item altname="回复">/Items/Traits/Trait_Recovery</Item>
+      <Item altname="大笑">/Player/Emotes/Emote_Laugh</Item>
     </Event>
-    <Event name="Wolf" altname="TheRavager">
-      <Item>/Items/Weapons/Boss/Pan_CurseOfTheJungleGod/Weapon_Pan_CurseOfTheJungleGod</Item>
-      <Item>/Items/Weapons/Boss/Pan_ScarOfTheJungleGod/Weapon_Pan_ScarOfTheJungleGod</Item>
-      <Item>/Items/Traits/Trait_ArcaneStrike</Item>
-      <Item>/Items/Traits/Trait_Swiftness</Item>
-      <Item>/Player/Emotes/Emote_FreezeFrame</Item>
+    <Event name="Wolf" altname="劫掠者">
+      <Item altname="丛林神之诅咒">/Items/Weapons/Boss/Pan_CurseOfTheJungleGod/Weapon_Pan_CurseOfTheJungleGod</Item>
+      <Item altname="丛林神之伤痕">/Items/Weapons/Boss/Pan_ScarOfTheJungleGod/Weapon_Pan_ScarOfTheJungleGod</Item>
+      <Item altname="奥术攻击">/Items/Traits/Trait_ArcaneStrike</Item>
+      <Item altname="迅敏">/Items/Traits/Trait_Swiftness</Item>
+      <Item altname="定格">/Player/Emotes/Emote_FreezeFrame</Item>
     </Event>
-    <Event name="WolfShrine">
-      <Item>/Items/Armor/Elder/Armor_Head_Elder</Item>
-      <Item>/Items/Armor/Elder/Armor_Body_Elder</Item>
-      <Item>/Items/Armor/Elder/Armor_Legs_Elder</Item>
+    <Event name="WolfShrine" altname="劫掠者神庙">
+      <Item altname="长老头饰">/Items/Armor/Elder/Armor_Head_Elder</Item>
+      <Item altname="长老服饰">/Items/Armor/Elder/Armor_Body_Elder</Item>
+      <Item altname="长老绑腿">/Items/Armor/Elder/Armor_Legs_Elder</Item>
     </Event>
     <!--
       Credit to /u/hlza00 for original locaiton and event names
