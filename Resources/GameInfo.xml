@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<GameInfo version="39">
+<GameInfo version="40">
   <Archetypes>
     <Archetype key="Undefined" name="未知"/>
     <Archetype key="Scrapper" name="拾荒者"/>
