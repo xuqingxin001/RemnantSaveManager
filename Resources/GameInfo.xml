@@ -1,11 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <GameInfo version="39">
+  <Archetypes>
+    <Archetype key="Undefined" name="未知"/>
+    <Archetype key="Scrapper" name="拾荒者"/>
+    <Archetype key="Cultist" name="前教徒"/>
+    <Archetype key="Hunter" name="猎人"/>
+  </Archetypes>
   <Zones>
-    <Zone name="地球"/>
-    <Zone name="洛姆"/>
-    <Zone name="克尔苏斯"/>
-    <Zone name="耶莎"/>
-    <Zone name="莱森"/>
+    <Zone key="Earth" name="地球"/>
+    <Zone key="Rhom" name="洛姆"/>
+    <Zone key="Corsus" name="克尔苏斯"/>
+    <Zone key="Yaesha" name="耶莎"/>
+    <Zone key="Reisum" name="莱森"/>
   </Zones>
   <SubLocations>
     <SubLocation eventName="ArmorVault" location="传令官的地下室"/>

@@ -50,7 +50,7 @@ namespace RemnantSaveManager
                     if (itemKey.Contains("/Trinkets/") || itemKey.Contains("BrabusPocketWatch")) itemType = "饰品";
                     if (itemKey.Contains("/Mods/")) itemType = "配件";
                     if (itemKey.Contains("/Traits/")) itemType = "特性";
-                    if (itemKey.Contains("/Emotes/")) itemType = "动作";
+                    if (itemKey.Contains("/Emotes/")) itemType = "表情";
 
                     itemName = itemName.Replace("Weapon_", "").Replace("Root_", "").Replace("Wasteland_", "").Replace("Swamp_", "").Replace("Pan_", "").Replace("Atoll_", "").Replace("Mod_", "").Replace("Trinket_", "").Replace("Trait_", "").Replace("Quest_", "").Replace("Emote_", "").Replace("Rural_", "").Replace("Snow_", "");
                     if (!itemType.Equals("Armor"))

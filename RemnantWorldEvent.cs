@@ -82,7 +82,7 @@ namespace RemnantSaveManager
             Dictionary<string, Dictionary<string, string>> zones = new Dictionary<string, Dictionary<string, string>>();
             Dictionary<string, List<RemnantWorldEvent>> zoneEvents = new Dictionary<string, List<RemnantWorldEvent>>();
             List<RemnantWorldEvent> churchEvents = new List<RemnantWorldEvent>();
-            foreach (string z in GameInfo.Zones)
+            foreach (string z in GameInfo.Zones.Keys)
             {
                 zones.Add(z, new Dictionary<string, string>());
                 zoneEvents.Add(z, new List<RemnantWorldEvent>());
@@ -192,7 +192,12 @@ namespace RemnantSaveManager
                             {
                                 zones[zone][eventType] += ", " + eventName;
                                 List<string> locationList = new List<string>();
-                                locationList.Add(zone);
+                                string zonelabel = zone;
+                                if (GameInfo.Zones.ContainsKey(zone))
+                                {
+                                    zonelabel = GameInfo.Zones[zone];
+                                }
+                                locationList.Add(zonelabel);
                                 if (currentMainLocation != null) locationList.Add(Regex.Replace(currentMainLocation, "([a-z])([A-Z])", "$1 $2"));
                                 if (currentSublocation != null) locationList.Add(Regex.Replace(currentSublocation, "([a-z])([A-Z])", "$1 $2"));
                                 se.Location = string.Join(": ", locationList);
@@ -292,7 +297,7 @@ namespace RemnantSaveManager
 
                 navun.Name = "与叛军战斗";
                 navun.setKey("SlaveRevolt");
-                navun.Location = "耶莎:  不朽者神祠";
+                navun.Location = "耶莎: 不朽者神祠";
                 navun.Type = "围攻";
                 navun.setMissingItems(character);
 
@@ -303,10 +308,10 @@ namespace RemnantSaveManager
                 ward17.setMissingItems(character);
             }
 
-            for (int i = 0; i < zoneEvents["地球"].Count; i++)
+            for (int i = 0; i < zoneEvents["Earth"].Count; i++)
             {
                 //if (mode == ProcessMode.Subject2923) Console.WriteLine(zoneEvents["Earth"][i].eventKey);
-                if (mode == ProcessMode.Campaign && !churchAdded && zoneEvents["地球"][i].Location.Contains("Westcourt"))
+                if (mode == ProcessMode.Campaign && !churchAdded && zoneEvents["Earth"][i].Location.Contains("Westcourt"))
                 {
                     foreach (RemnantWorldEvent rwe in churchEvents)
                     {
@@ -314,39 +319,39 @@ namespace RemnantSaveManager
                     }
                     churchAdded = true;
                 }
-                orderedEvents.Add(zoneEvents["地球"][i]);
+                orderedEvents.Add(zoneEvents["Earth"][i]);
             }
-            for (int i = 0; i < zoneEvents["洛姆"].Count; i++)
+            for (int i = 0; i < zoneEvents["Rhom"].Count; i++)
             {
-                orderedEvents.Add(zoneEvents["洛姆"][i]);
+                orderedEvents.Add(zoneEvents["Rhom"][i]);
             }
             if (mode == ProcessMode.Campaign && undying.MissingItems.Length > 0) orderedEvents.Add(undying);
-            for (int i = 0; i < zoneEvents["莱森"].Count; i++)
+            for (int i = 0; i < zoneEvents["Corsus"].Count; i++)
             {
-                if (mode == ProcessMode.Campaign && !queenAdded && zoneEvents["莱森"][i].Location.Contains("The Mist Fen"))
+                if (mode == ProcessMode.Campaign && !queenAdded && zoneEvents["Corsus"][i].Location.Contains("The Mist Fen"))
                 {
                     if (queen.MissingItems.Length > 0) orderedEvents.Add(queen);
                     queenAdded = true;
                 }
-                orderedEvents.Add(zoneEvents["莱森"][i]);
+                orderedEvents.Add(zoneEvents["Corsus"][i]);
             }
-            for (int i = 0; i < zoneEvents["耶莎"].Count; i++)
+            for (int i = 0; i < zoneEvents["Yaesha"].Count; i++)
             {
-                if (mode == ProcessMode.Campaign && !navunAdded && zoneEvents["耶莎"][i].Location.Contains("The Scalding Glade"))
+                if (mode == ProcessMode.Campaign && !navunAdded && zoneEvents["Yaesha"][i].Location.Contains("The Scalding Glade"))
                 {
                     if (navun.MissingItems.Length > 0) orderedEvents.Add(navun);
                     navunAdded = true;
                 }
-                orderedEvents.Add(zoneEvents["耶莎"][i]);
+                orderedEvents.Add(zoneEvents["Yaesha"][i]);
             }
-            for (int i = 0; i < zoneEvents["克尔苏斯"].Count; i++)
+            for (int i = 0; i < zoneEvents["Reisum"].Count; i++)
             {
                 /*if (mode == ProcessMode.Campaign && !navunAdded && zoneEvents["Yaesha"][i].Location.Contains("The Scalding Glade"))
                 {
                     if (navun.MissingItems.Length > 0) orderedEvents.Add(navun);
                     navunAdded = true;
                 }*/
-                orderedEvents.Add(zoneEvents["克尔苏斯"][i]);
+                orderedEvents.Add(zoneEvents["Reisum"][i]);
             }
 
             if (mode == ProcessMode.Campaign)
@@ -382,23 +387,23 @@ namespace RemnantSaveManager
             string zone = null;
             if (textLine.Contains("World_City") || textLine.Contains("Quest_Church") || textLine.Contains("World_Rural"))
             {
-                zone = "地球";
+                zone = "Earth";
             }
             else if (textLine.Contains("World_Wasteland"))
             {
-                zone = "洛姆";
+                zone = "Rhom";
             }
             else if (textLine.Contains("World_Jungle"))
             {
-                zone = "耶莎";
+                zone = "Yaesha";
             }
             else if (textLine.Contains("World_Swamp"))
             {
-                zone = "克尔苏斯";
+                zone = "Corsus";
             }
             else if (textLine.Contains("World_Snow") || textLine.Contains("Campaign_Clementine"))
             {
-                zone = "莱森";
+                zone = "Reisum";
             }
             return zone;
         }
